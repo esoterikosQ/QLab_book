@@ -1,0 +1,9 @@
+{
+    "myst.preview.extensions": [
+        "dollarmath",
+        "amsmath",
+        "deflist",
+        "tasklist"
+    ],
+    "myst.preview.enable": true
+}
