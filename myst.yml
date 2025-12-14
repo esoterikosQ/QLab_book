@@ -1,0 +1,20 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 036f99d6-cdce-457d-896a-c70b7f0f3552
+  title: Understanding Data Science
+  description: 데이터 분석 관련 설명 자료를 다루고 있습니다.
+  keywords: 
+    - 데이터 분석
+    - 데이터 과학
+    - 대학수학
+    - 통계학
+    - 인공지능
+  # authors: []
+  github: esoterikosQ/QLab_book
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
