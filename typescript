@@ -1,0 +1,163 @@
+Script started on Thu Jan 15 12:00:17 2026
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggcloud auth list[?2004l
+    Credentialed Accounts
+ACTIVE  ACCOUNT
+*       seunggyu.bak@gmail.com
+
+To set the active account, run:
+    $ gcloud config set account `ACCOUNT`
+
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggcloud config list[?2004l
+[core]
+account = seunggyu.bak@gmail.com
+disable_usage_reporting = False
+project = qlab-books-comprehensive
+
+Your active configuration is: [default]
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004haajklsd;     a  ggcloud storage buckets create gs: [K///qlab-books-bucket --uniform-bucket-level-access --project=qlab0 -books-comprehen [Kssive --website-main-page-suffix=index.html[?2004l
+[1;31mERROR:[0m (gcloud.storage.buckets.create) unrecognized arguments: --website-main-page-suffix=index.html 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hㅎ치ㅐ      ggcloud storage bud ckets create gs: [K///qlab-books-bucket --project=qlab-books-comprehensive --location=asia-northeast [K3[?2004l
+Creating gs://qlab-books-bucket/...
+[1;31mERROR:[0m (gcloud.storage.buckets.create) HTTPError 403: The billing account for the owning project is disabled in state absent. This command is authenticated as seunggyu.bak@gmail.com which is the active account specified by the [core/account] property
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hgcloud storage buckets create gs://qlab-books-bucket --project=qlab-books-comprehensive --location=asia-northeast3[K[?2004l
+Creating gs://qlab-books-bucket/...
+[1;31mERROR:[0m (gcloud.storage.buckets.create) HTTPError 403: The billing account for the owning project is disabled in state absent. This command is authenticated as seunggyu.bak@gmail.com which is the active account specified by the [core/account] property
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hgcloud storage buckets create gs://qlab-books-bucket --project=qlab-books-comprehensive --location=asia-northeast3[K[?2004l
+Creating gs://qlab-books-bucket/...
+[1;31mERROR:[0m (gcloud.storage.buckets.create) HTTPError 403: The billing account for the owning project is disabled in state absent. This command is authenticated as seunggyu.bak@gmail.com which is the active account specified by the [core/account] property
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004h치ㅐㅕ      ggcloud config g  get-value project[?2004l
+qlab-books-comprehensive
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggcloud billing projects describe  [Kqqlab-books-comprehensive[?2004l
+billingAccountName: ''
+billingEnabled: false
+name: projects/qlab-books-comprehensive/billingInfo
+projectId: qlab-books-comprehensive
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggvcl  g gcloud bil li ling accounts list[?2004l
+ACCOUNT_ID            NAME                OPEN  MASTER_ACCOUNT_ID
+019B05-7A0419-B7F4B5  My Billing Account  True
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggcloud billing projects link [7m019B[7m0[7m5-7A0419-B7F4B5[27m[K[A[60C[27m0[27m1[27m9[27mB0[27m5[27m-[27m7[27mA[27m0[27m4[27m1[27m9[27m-[27mB[27m7[27mF[27m4[27mB[27m5[1C--billing-account                               0 [K[A[79C[K[1B[K[A[79C   qlab [K--books-comprehensive --billing= -account [7m019B05-7A0419-B7F4B5[27m[20D[27m0[27m1[27m9[27mB[27m0[27m5[27m-[27m7[27mA[27m0[27m4[27m1[27m9[27m-[27mB[27m7[27mF[27m4[27mB[27m5[?2004l
+billingAccountName: billingAccounts/019B05-7A0419-B7F4B5
+billingEnabled: true
+name: projects/qlab-books-comprehensive/billingInfo
+projectId: qlab-books-comprehensive
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hgcloud billing projects link qlab-books-comprehensive --billing-account 019B05-7A0419-B7F4B5[K[A[3Caccoun[5Cst[K[1B[K[A[75C[13Dprojec[3Cdescribe qlab-books-comprehensive[K[A[30Cconfig get-value project[K[1B[K[A[78C[24Dstorage buckets create gs://qlab-books-bucket --project=qlab-books-comprehensive --location=asia-northeast3[K[?2004l
+Creating gs://qlab-books-bucket/...
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggcloud storage buckets update gs: [K///qlg ab-books-bucket --web-main-page-suffix=index.html[?2004l
+                                                                                 Completed 0                                                                                 Completed 0⠛                                                                                 Completed 0⠹Updating gs://qlab-books-bucket/...
+                                                                                 Completed 0⠼                                                                                 Completed 1⠶                                                                                 Completed 1
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggcloud storage buckets add-iam-po [Kllicy-binding gs://qlab-books-bucket --member=allUsers --role=roles/storage.objec [KttViewer[?2004l
+bindings:
+- members:
+  - projectEditor:qlab-books-comprehensive
+  - projectOwner:qlab-books-comprehensive
+  role: roles/storage.legacyBucketOwner
+- members:
+  - projectViewer:qlab-books-comprehensive
+  role: roles/storage.legacyBucketReader
+- members:
+  - allUsers
+  role: roles/storage.objectViewer
+etag: CAM=
+kind: storage#policy
+resourceId: projects/_/buckets/qlab-books-bucket
+version: 1
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggcloud iam servie ce-accoutn  nts creat [Kee github-dep          qlab-book-deployter   er --display-name="GitHub Actions Deployer"[?2004l
+Created service account [qlab-book-deployer].
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggcloud storage buckets add-ai  iam-po [Kllicy-binidng    ding gs://qlab-books-bucket --member="serviceAccount:qlab-book-deployer@ [Kqqlab-books-comper  rehensive.iam.gserviceaccount.com" --role=roles/storage.objectAdm [Kiin[?2004l
+bindings:
+- members:
+  - projectEditor:qlab-books-comprehensive
+  - projectOwner:qlab-books-comprehensive
+  role: roles/storage.legacyBucketOwner
+- members:
+  - projectViewer:qlab-books-comprehensive
+  role: roles/storage.legacyBucketReader
+- members:
+  - serviceAccount:qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+- members:
+  - allUsers
+  role: roles/storage.objectViewer
+etag: CAQ=
+kind: storage#policy
+resourceId: projects/_/buckets/qlab-books-bucket
+version: 1
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggcloud iam service-accounts keys  [Kccreate gcp-credentials.json --a iam-account="qlab-book-deployer@qlab-books-compreh [Keensive-gserviceaccount.com"[?2004l
+[1;31mERROR:[0m (gcloud.iam.service-accounts.keys.create) NOT_FOUND: Unknown service account. This command is authenticated as seunggyu.bak@gmail.com which is the active account specified by the [core/account] property
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hgcloud iam service-accounts keys create gcp-credentials.json --iam-account="qlab-book-deployer@qlab-books-comprehensive-gserviceaccount.com"[K[P[20C [21D.gserviceaccount.com"[20Digserviceaccount.com"[20Dagserviceaccount.com"[20Dmgserviceaccount.com"[20D.gserviceaccount.com"[20D[?2004l
+created key [2ab6e4628e6d51a560e09bfa4275f9379764f5d1] of type [json] as [gcp-credentials.json] for [qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com]
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hccat gcp-credentials.json[1m [0m[0m [?2004l
+{
+  "type": "service_account",
+  "project_id": "qlab-books-comprehensive",
+  "private_key_id": "2ab6e4628e6d51a560e09bfa4275f9379764f5d1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCagz8xMqk7b5Fp\n6aLpbkx1qCgz5io6ZOo81xyb+yHuIwIY156XSFPd6pMbut1ocKRoOLc9cFb5Ju8V\nnCBSrRJJFVVOf2zLDI+Qogm+YCvp3p1UChPhreNYQ0hmKnUgsO4tLCjRS8ahMARG\n+9OKy5JYTdyIFGgrbLuaEpTgh+abVlg1ZIBYAtnkiIMM/Tywa9bk7VFYV1DANzdY\niPYooBTQm3H8tSf7bu7ZWaCuDtmCEN54CF0j6Dd+Yx2cRkdwIYJrQbSbwGUl//HC\ncvbBFU/anwTCZxH46cJ6FmycbLdGgmavTMEsmgLg8qXAoQ9Hw7ce9QD55XCbO6wo\nFwBxUTJZAgMBAAECggEABTFIHZ9kpAsdDCiORsF5P31PR+U3gemzxyfPKJJxOAyZ\nogZBqGGwHdWnrBzPcCvUPpi6AbjQLMR+muTkX4WSRyijdVqfaEMhDPzWY9KID0Ph\nriS+OSKWm2Kmy3YoTwOwfA358NoBesJqFmJD9Za0nD6WR3AbdcAhnYJ72dV/WLTU\nrnJqGcPpLQ+2fBZ2Iki3V31nkcFqM6SXcDuRgcDRXqXJAP2wLGQ0BvN9tsx60PHt\nB4yMtngxnaHY85FT80m+GNgO3RrGrkh2fJ7vDoD5edvUx6ixh/YrLp7P3QQxncQL\nQKHwXPZl0sPad9jmihjGwUa0F+q9P0S9T/UhNd3fDQKBgQDHQ/TCMlZA8fPJegVS\nCKg295B8RMf6WFkFYZUERfxKhkAIHVsCGszqqYYaDzFj2gO2DLJqP++YZcoXPZ3w\nOYwCS8r2TkdhkrjtUdxtqvPsMfBuEDx7RfXdMUVCIPm2Za5/bS4QiP2VfctZakXp\nH9r22Ategj8nRomdRkOdNGWa3QKBgQDGgVrBs1XfdSVu7OSTiXkaVCoAU54Q0nYC\nXfnV2rycla3p7rE87m5NApRNqQrRJw85Wpkms1FjAzvmhXKqqDsLJAcGst9RHf99\nvd13nCCi18Uwq8bHK7fQYvEYDzUhkInb4qiB8W4EE/dzHhCO4Adqda7dC8XiMJ2S\nY9A126GHrQKBgQC8aGauj4W6losZP0R0kjbq8h0tQqOK86oISoHprnqjxFga1BbO\n4KRMZMmlLiRW8zZ7FXpEt/tFL0lrvBjvoJnfOebICK+5dE9iJPq0vuUvuPBKQRPO\nwxF7eTCxHBi/+1iIp6TcgYqzpGN3QeKkUDhrGU92ptQrwKgxitQ3eelwCQKBgH0D\n1l6LTRewNWUIuGPafnSAcPtHrhK2GTAgc0mluod7FM5xTxoqpzjE2RWX0oIqcUIT\ntsRSxnzu+niRrsefr5+yjuI/ILl7hP5x5tp/b2ZfMYcXh9bDx73rsh8O5M1AtDHR\nK4K6xCi5UmwjkRYKLWF0wC3iTjvHllUtm2Fv8uj5AoGAZAzzwamAhNQaQ5jqBdqh\nnd5p1kkuXtaHlAtKfpXkuT3xk+GQc/elbto+q6kgMykK1oPTB1QaxRD8SItIpHI3\nBlGr8AheXFkg7tJdkY7GmpF9i2ie3k8hM4t2jowOxrn39rrGw14iMZaTYjcuWxBB\nEDdFWjmFNPgn/YlTl1IwHj0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com",
+  "client_id": "116280091101949229782",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/qlab-book-deployer%40qlab-books-comprehensive.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggit status[?2004l
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   intro.md[m
+	[31mmodified:   myst.yml[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.DS_Store[m
+	[31m.github/[m
+	[31mGEMINI.md[m
+	[31mThu[m
+	[31massets/[m
+	[31mcs/[m
+	[31mds/[m
+	[31mgcp-credentials.json[m
+	[31mgoogle-cloud-cli-darwin-x86_64.tar.gz[m
+	[31mgoogle-cloud-sdk/[m
+	[31mindex.html[m
+	[31mtypescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004hggit add -a[?2004l
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --[no-]dry-run    dry run
+    -v, --[no-]verbose    be verbose
+
+    -i, --[no-]interactive
+                          interactive picking
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -e, --[no-]edit       edit current diff and apply
+    -f, --[no-]force      allow adding otherwise ignored files
+    -u, --[no-]update     update tracked files
+    --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+    -N, --[no-]intent-to-add
+                          record only the fact that the path will be added later
+    -A, --[no-]all        add changes from all tracked and untracked files
+    --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+    --[no-]refresh        don't add, only refresh the index
+    --[no-]ignore-errors  just skip files which cannot be added because of errors
+    --[no-]ignore-missing check if - even missing - files are ignored in dry run
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+    --[no-]chmod (+|-)x   override the executable bit of the listed files
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book[0m[27m[24m[J(base) esoterikos@Great-Smoky-Mountains book % [K[?2004h

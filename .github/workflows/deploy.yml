@@ -1,0 +1,63 @@
+name: Deploy Jupyter Books to GCP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install MyST
+        run: npm install -g mystmd
+      
+      - name: Build CS Jupyter Book
+        run: |
+          cd cs
+          myst build --html
+      
+      - name: Build DS Jupyter Book
+        run: |
+          cd ds
+          myst build --html
+      
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p deploy
+          cp index.html deploy/
+          cp -r assets deploy/ 2>/dev/null || true
+          mkdir -p deploy/cs
+          mkdir -p deploy/ds
+          cp -r cs/_build/site/* deploy/cs/
+          cp -r ds/_build/site/* deploy/ds/
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+      - name: Setup Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Deploy to GCP Cloud Storage
+        run: |
+          gsutil -m rsync -r -d deploy gs://${{ secrets.GCP_BUCKET_NAME }}
+
+      - name: Set cache headers
+        run: |
+          gsutil -m setmeta -h "Cache-Control:public, max-age=3600" gs://${{ secrets.GCP_BUCKET_NAME }}/**
+
+      - name: Invalidate Cloud CDN cache
+        run: gcloud compute backend-buckets invalidate-cdn-cache ${{ secrets.GCP_BACKEND_BUCKET_NAME }} --path "/*" --project=${{ secrets.GCP_PROJECT_ID }}

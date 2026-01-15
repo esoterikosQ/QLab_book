@@ -1,0 +1,16 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 863990a8-2ea8-49b9-b800-321cd4ec7243
+  title: Computer Science
+  # description:
+  # keywords: []
+  # authors: SeungGyu Bak
+  github: https://github.com/esoterikosQ/QLab_book
+  entry: intro.md
+  toc:
+    - file: intro.md
+
+site:
+  template: book-theme
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"

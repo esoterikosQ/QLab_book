@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 800px;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .book-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .book-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .book-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .book-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .book-description {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        .cs-card {
+            border-top: 4px solid #3498db;
+        }
+        
+        .ds-card {
+            border-top: 4px solid #e74c3c;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Book Projects</h1>
+        <p class="subtitle">Jupyter Book으로 만든 학습 자료 모음</p>
+        
+        <div class="books-grid">
+            <a href="cs/" class="book-card cs-card">
+                <div class="book-icon">💻</div>
+                <h2 class="book-title">Computer Science</h2>
+                <p class="book-description">컴퓨터 과학 관련 학습 자료</p>
+            </a>
+            
+            <a href="ds/" class="book-card ds-card">
+                <div class="book-icon">📊</div>
+                <h2 class="book-title">Data Science</h2>
+                <p class="book-description">데이터 과학 및 통계 관련 학습 자료</p>
+            </a>
+        </div>
+        
+        <footer>
+            <p>박승규 | Jupyter Book Projects</p>
+        </footer>
+    </div>
+</body>
+</html>
