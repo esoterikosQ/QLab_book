@@ -1115,4 +1115,1096 @@ Untracked files:
 	google-cloud-cli-darwin-arm.tar.gz
 
 no changes added to commit (use "git add" and/or "git commit -a")
+%                                                                               ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book(base) esoterikos@Great-Smoky-Mountains book % [?2004hgit add .[?2004l
+%                                                                               ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book(base) esoterikos@Great-Smoky-Mountains book % [?2004hgit commit -m "add ignore direcbook % git commit -m "add ignore direct                                       <      git commit -m "add ignore directoreis"    ies"[?2004l
+[master 34e5825d] add ignore directories
+ 1072 files changed, 1232 insertions(+), 253 deletions(-)
+ create mode 100644 260119_gcp_2nd_trial.log
+ delete mode 100644 Thu
+ rename google-cloud-cli-darwin-x86_64.tar.gz => google-cloud-cli-darwin-arm.tar.gz (81%)
+ delete mode 100644 google-cloud-sdk/.install/gcloud-crc32c-darwin-x86_64.manifest
+ delete mode 100644 google-cloud-sdk/.install/gcloud-crc32c-darwin-x86_64.snapshot.json
+ delete mode 100644 google-cloud-sdk/.install/gcloud-deps-darwin-x86_64.manifest
+ delete mode 100644 google-cloud-sdk/.install/gcloud-deps-darwin-x86_64.snapshot.json
+ delete mode 100644 google-cloud-sdk/bin/bootstrapping/__pycache__/bootstrapping.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/bin/bootstrapping/__pycache__/setup.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/__pycache__/gcloud.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/__pycache__/gcloud_main.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/app/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/artifacts/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/artifacts/__pycache__/exceptions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/auth/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/auth/__pycache__/exceptions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/auth/__pycache__/external_account.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/auth/__pycache__/service_account.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/auth/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudkms/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudkms/__pycache__/base.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudkms/__pycache__/iam.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/error_reporting/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/error_reporting/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/iamcredentials/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/iamcredentials/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/services/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/services/__pycache__/enable_api.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/services/__pycache__/exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/services/__pycache__/services_util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/services/__pycache__/serviceusage.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/api_factory.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/cloud_api.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/errors.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/gcs_download.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/gcs_iam_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/headers_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/metadata_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/request_config_factory.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/retry_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/storage_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/xml_metadata_field_converters.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/__pycache__/xml_metadata_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_grpc/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_grpc/__pycache__/client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_grpc/__pycache__/download.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_grpc/__pycache__/grpc_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_grpc/__pycache__/metadata_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_grpc/__pycache__/retry_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_grpc/__pycache__/upload.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/__pycache__/client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/__pycache__/download.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/__pycache__/error_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/__pycache__/metadata_field_converters.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/__pycache__/metadata_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/__pycache__/patch_apitools_messages.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/__pycache__/upload.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_xml/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_xml/__pycache__/client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/s3_xml/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/s3_xml/__pycache__/client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/util/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/util/__pycache__/api_enablement.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/util/__pycache__/apis.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/util/__pycache__/apis_internal.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/util/__pycache__/apis_util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/util/__pycache__/exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/util/__pycache__/http_retry.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/util/__pycache__/resource.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/util/__pycache__/resource_search.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/api_lib/util/__pycache__/waiter.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/actions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/arg_parsers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/arg_parsers_usage_text.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/backend.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/base.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/cli.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/command_loading.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/command_release_tracks.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/display.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/display_info.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/display_taps.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/parser_arguments.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/parser_completer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/parser_errors.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/parser_extensions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/suggest_commands.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/__pycache__/usage_text.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/concepts/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/concepts/__pycache__/handlers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/calliope/concepts/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/__pycache__/crash_handling.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/__pycache__/error_reporting_util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/__pycache__/info_holder.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/artifacts/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/artifacts/__pycache__/requests.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/auth/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/auth/__pycache__/auth_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/auth/__pycache__/enterprise_certificate_config.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/auth/__pycache__/flags.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/auth/__pycache__/workforce_login_config.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/components/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/components/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/config/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/config/virtualenv/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/config/virtualenv/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/iam/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/iam/__pycache__/completers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/resource_manager/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/resource_manager/__pycache__/completers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/static_completion/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/static_completion/__pycache__/lookup.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/encryption_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/errors.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/errors_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/fast_crc32c_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/flags.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/folder_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/gzip_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/hash_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/iam_command_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/manifest_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/metrics_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/operations_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/optimize_parameters_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/plurality_checkable_iterator.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/posix_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/progress_callbacks.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/stdin_iterator.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/storage_url.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/symlink_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/thread_messages.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/tracker_file_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/user_request_args_factory.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/__pycache__/wildcard_iterator.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/resources/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/resources/__pycache__/full_resource_formatter.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/resources/__pycache__/gcs_resource_reference.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/resources/__pycache__/resource_reference.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/resources/__pycache__/resource_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/resources/__pycache__/s3_resource_reference.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/__pycache__/set_iam_policy_task.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/__pycache__/task.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/__pycache__/task_buffer.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/__pycache__/task_executor.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/__pycache__/task_graph.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/__pycache__/task_graph_debugger.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/__pycache__/task_graph_executor.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/__pycache__/task_status.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/__pycache__/task_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/buckets/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/buckets/__pycache__/create_bucket_task.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/buckets/__pycache__/update_bucket_task.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/cp/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/cp/__pycache__/copy_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/cp/__pycache__/download_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/__pycache__/check_browser.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/__pycache__/completers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/__pycache__/crc32c.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/__pycache__/gcloudignore.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/__pycache__/glob.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/__pycache__/parameter_info_lib.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/anthos/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/anthos/__pycache__/binary_operations.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/anthos/__pycache__/structured_messages.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/__pycache__/arg_utils.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/__pycache__/registry.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/__pycache__/yaml_command_schema.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/__pycache__/yaml_command_schema_util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/__pycache__/yaml_command_translator.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/args/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/args/__pycache__/common_args.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/command_lib/util/args/__pycache__/labels_util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/argv_utils.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/config.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/context_aware.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/execution_utils.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/local_file_adapter.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/log.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/metrics.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/module_util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/platforms_install.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/properties.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/requests.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/resources.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/transport.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/yaml.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/yaml_location_value.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/__pycache__/yaml_validator.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/cache/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/cache/__pycache__/cache_update_ops.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/cache/__pycache__/completion_cache.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/cache/__pycache__/exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/cache/__pycache__/file_cache.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/cache/__pycache__/function_result_cache.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/cache/__pycache__/metadata_table.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/cache/__pycache__/persistent_cache_base.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/cache/__pycache__/resource_cache.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/cache/__pycache__/sqlite_cache.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/configurations/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/configurations/__pycache__/named_configs.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/configurations/__pycache__/properties_file.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/__pycache__/console_attr.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/__pycache__/console_attr_os.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/__pycache__/console_io.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/__pycache__/console_pager.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/__pycache__/multiline.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/__pycache__/progress_tracker.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/__pycache__/prompt_completer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/style/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/style/__pycache__/ansi.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/style/__pycache__/mappings.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/style/__pycache__/parser.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/console/style/__pycache__/text.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/creds.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/creds_context_managers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/devshell.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/flow.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/gce.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/gce_cache.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/gce_read.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/introspect.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/credentials/__pycache__/store.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/docker/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/docker/__pycache__/constants.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/document_renderers/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/document_renderers/__pycache__/devsite_renderer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/document_renderers/__pycache__/devsite_scripts.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/document_renderers/__pycache__/html_renderer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/document_renderers/__pycache__/linter_renderer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/document_renderers/__pycache__/man_renderer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/document_renderers/__pycache__/markdown_renderer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/document_renderers/__pycache__/render_document.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/document_renderers/__pycache__/renderer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/document_renderers/__pycache__/text_renderer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/config_printer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/csv_printer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/diff_printer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/flattened_printer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/json_printer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/list_printer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/object_printer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_expr.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_expr_rewrite.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_filter.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_keys_expr.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_lex.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_printer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_printer_base.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_printer_types.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_projection_parser.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_projection_spec.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_projector.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_property.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_reference.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/resource_transform.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/table_printer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/resource/__pycache__/yaml_printer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/survey/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/survey/__pycache__/survey_check.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/universe_descriptor/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/universe_descriptor/__pycache__/universe_descriptor.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/universe_descriptor/v1/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/universe_descriptor/v1/__pycache__/universe_descriptor_data_pb2.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/updater/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/updater/__pycache__/installers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/updater/__pycache__/local_state.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/updater/__pycache__/python_manager.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/updater/__pycache__/release_notes.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/updater/__pycache__/schemas.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/updater/__pycache__/snapshots.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/updater/__pycache__/update_check.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/updater/__pycache__/update_manager.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/debug_output.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/encoding.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/files.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/hashing.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/http_encoding.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/http_proxy_types.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/iso_duration.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/keyboard_interrupt.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/lazy_regex.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/lazy_regex_patterns.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/parallel.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/peek_iterable.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/pkg_resources.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/platforms.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/prompt_helper.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/regional.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/retry.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/scaled_integer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/semver.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/text.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/times.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/core/util/__pycache__/times_data.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/__pycache__/apis_map.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/iam/v1/__pycache__/iam_v1_client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/serviceusage/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/serviceusage/v1/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/serviceusage/v1/__pycache__/serviceusage_v1_client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/serviceusage/v1/__pycache__/serviceusage_v1_messages.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/v1/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/v1/__pycache__/storage_v1_client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/v1/__pycache__/storage_v1_messages.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/__pycache__/version.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/auth/__pycache__/login.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/billing/projects/__pycache__/link.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/components/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/components/__pycache__/list.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/config/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/config/__pycache__/get.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/config/__pycache__/get_value.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/config/virtualenv/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/config/virtualenv/__pycache__/create.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/config/virtualenv/__pycache__/enable.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/iam/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/iam/__pycache__/_init_extensions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/iam/service_accounts/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/iam/service_accounts/__pycache__/create.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/iam/service_accounts/keys/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/iam/service_accounts/keys/__pycache__/create.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/storage/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/storage/buckets/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/storage/buckets/__pycache__/add_iam_policy_binding.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/storage/buckets/__pycache__/create.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/surface/storage/buckets/__pycache__/update.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/protorpclite/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/protorpclite/__pycache__/message_types.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/protorpclite/__pycache__/messages.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/protorpclite/__pycache__/protojson.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/protorpclite/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/buffered_stream.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/compression.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/encoding.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/encoding_helper.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/extra_types.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/gzip.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/http_wrapper.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/list_pager.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/stream_slice.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/transfer.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/apitools/base/py/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/argcomplete/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/argcomplete/__pycache__/compat.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/argcomplete/__pycache__/completers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/argcomplete/__pycache__/my_argparse.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/argcomplete/__pycache__/my_shlex.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/argcomplete/__pycache__/shellintegration.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/argparse/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/__pycache__/exceptions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/__pycache__/session.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/__pycache__/utils.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/action.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/attr.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/base.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/collection.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/docstring.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/method.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/resource.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/service.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/subresource.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/utils.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/docs/__pycache__/waiter.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/resources/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/resources/__pycache__/action.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/resources/__pycache__/base.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/resources/__pycache__/collection.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/resources/__pycache__/factory.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/resources/__pycache__/model.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/resources/__pycache__/params.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/boto3/resources/__pycache__/response.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/args.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/auth.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/awsrequest.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/compat.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/compress.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/config.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/configloader.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/configprovider.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/credentials.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/discovery.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/endpoint.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/endpoint_provider.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/errorfactory.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/eventstream.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/exceptions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/handlers.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/history.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/hooks.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/httpchecksum.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/httpsession.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/loaders.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/model.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/monitoring.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/paginate.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/parsers.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/regions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/response.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/retryhandler.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/serialize.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/session.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/signers.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/tokens.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/translate.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/useragent.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/utils.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/validate.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/__pycache__/waiter.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/crt/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/docstring.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/example.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/method.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/paginator.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/params.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/service.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/shape.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/sharedexample.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/utils.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/__pycache__/waiter.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/bcdoc/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/bcdoc/__pycache__/docstringparser.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/bcdoc/__pycache__/restdoc.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/docs/bcdoc/__pycache__/style.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/retries/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/retries/__pycache__/adaptive.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/retries/__pycache__/base.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/retries/__pycache__/bucket.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/retries/__pycache__/quota.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/retries/__pycache__/special.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/retries/__pycache__/standard.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/retries/__pycache__/throttling.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/vendored/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/vendored/__pycache__/six.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/vendored/requests/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/vendored/requests/__pycache__/exceptions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/vendored/requests/packages/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/vendored/requests/packages/urllib3/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/botocore/vendored/requests/packages/urllib3/__pycache__/exceptions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cachetools/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cachetools/__pycache__/abc.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cachetools/__pycache__/cache.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cachetools/__pycache__/keys.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cachetools/__pycache__/lfu.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cachetools/__pycache__/lru.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cachetools/__pycache__/rr.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cachetools/__pycache__/ttl.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/certifi/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/certifi/__pycache__/core.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/big5freq.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/big5prober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/chardistribution.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/charsetgroupprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/charsetprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/codingstatemachine.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/codingstatemachinedict.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/cp949prober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/enums.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/escprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/escsm.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/eucjpprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/euckrfreq.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/euckrprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/euctwfreq.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/euctwprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/gb2312freq.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/gb2312prober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/hebrewprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/jisfreq.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/johabfreq.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/johabprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/jpcntx.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/langbulgarianmodel.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/langgreekmodel.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/langhebrewmodel.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/langrussianmodel.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/langthaimodel.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/langturkishmodel.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/latin1prober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/macromanprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/mbcharsetprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/mbcsgroupprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/mbcssm.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/resultdict.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/sbcharsetprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/sbcsgroupprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/sjisprober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/universaldetector.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/utf1632prober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/utf8prober.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/chardet/__pycache__/version.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/any_pb2.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/descriptor.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/descriptor_database.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/descriptor_pb2.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/descriptor_pool.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/duration_pb2.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/field_mask_pb2.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/json_format.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/message.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/message_factory.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/reflection.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/runtime_version.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/struct_pb2.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/symbol_database.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/text_encoding.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/text_format.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/timestamp_pb2.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/unknown_fields.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/__pycache__/wrappers_pb2.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/api_implementation.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/builder.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/containers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/decoder.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/encoder.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/enum_type_wrapper.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/extension_dict.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/field_mask.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/message_listener.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/python_edition_defaults.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/python_message.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/type_checkers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/well_known_types.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/internal/__pycache__/wire_format.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/cloudsdk/google/protobuf/pyext/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/concurrent/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/__pycache__/_common.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/__pycache__/_version.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/__pycache__/relativedelta.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/__pycache__/tzwin.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/parser/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/parser/__pycache__/_parser.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/parser/__pycache__/isoparser.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/tz/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/tz/__pycache__/_common.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/tz/__pycache__/_factories.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/tz/__pycache__/tz.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/dateutil/tz/__pycache__/win.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/_python_package_support.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/_python_version_support.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/client_info.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/datetime_helpers.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/exceptions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/general_helpers.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/grpc_helpers.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/grpc_helpers_async.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/retry_async.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/timeout.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/__pycache__/version.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/gapic_v1/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/gapic_v1/__pycache__/client_info.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/gapic_v1/__pycache__/config.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/gapic_v1/__pycache__/config_async.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/gapic_v1/__pycache__/method.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/gapic_v1/__pycache__/method_async.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/gapic_v1/__pycache__/routing_header.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/retry/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/retry/__pycache__/retry_base.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/retry/__pycache__/retry_streaming.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/retry/__pycache__/retry_streaming_async.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/retry/__pycache__/retry_unary.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/api_core/retry/__pycache__/retry_unary_async.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/_credentials_base.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/_default.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/_exponential_backoff.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/_helpers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/_refresh_worker.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/_service_account_info.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/credentials.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/environment_vars.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/external_account.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/external_account_authorized_user.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/iam.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/impersonated_credentials.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/jwt.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/metrics.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/__pycache__/version.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/compute_engine/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/compute_engine/__pycache__/_metadata.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/compute_engine/__pycache__/credentials.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/crypt/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/crypt/__pycache__/_cryptography_rsa.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/crypt/__pycache__/_python_rsa.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/crypt/__pycache__/base.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/crypt/__pycache__/es256.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/crypt/__pycache__/rsa.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/transport/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/transport/__pycache__/_http_client.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/transport/__pycache__/_mtls_helper.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/transport/__pycache__/grpc.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/auth/transport/__pycache__/requests.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/oauth2/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/oauth2/__pycache__/_client.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/oauth2/__pycache__/service_account.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/oauth2/__pycache__/sts.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/oauth2/__pycache__/utils.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/rpc/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/rpc/__pycache__/error_details_pb2.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google/rpc/__pycache__/status_pb2.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google_auth_oauthlib/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google_auth_oauthlib/__pycache__/flow.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google_auth_oauthlib/__pycache__/helpers.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/google_auth_oauthlib/__pycache__/interactive.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/grpc_status/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/grpc_status/__pycache__/_async.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/grpc_status/__pycache__/_common.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/grpc_status/__pycache__/rpc_status.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/httplib2/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/httplib2/python3/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/httplib2/python3/httplib2/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/httplib2/python3/httplib2/__pycache__/auth.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/httplib2/python3/httplib2/__pycache__/certs.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/httplib2/python3/httplib2/__pycache__/error.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/httplib2/python3/httplib2/__pycache__/iri2uri.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/httplib2/python3/httplib2/__pycache__/socks.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/idna/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/idna/__pycache__/core.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/idna/__pycache__/idnadata.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/idna/__pycache__/intranges.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/idna/__pycache__/package_data.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ipaddress/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jmespath/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jmespath/__pycache__/ast.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jmespath/__pycache__/compat.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jmespath/__pycache__/exceptions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jmespath/__pycache__/functions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jmespath/__pycache__/lexer.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jmespath/__pycache__/parser.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jmespath/__pycache__/visitor.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jsonschema/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jsonschema/__pycache__/_format.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jsonschema/__pycache__/_utils.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jsonschema/__pycache__/_validators.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jsonschema/__pycache__/_version.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jsonschema/__pycache__/compat.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jsonschema/__pycache__/exceptions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/jsonschema/__pycache__/validators.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/_helpers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/_openssl_crypt.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/_pkce.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/_pure_python_crypt.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/_pycrypto_crypt.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/client.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/clientsecrets.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/crypt.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/service_account.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/transport.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/contrib/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/contrib/__pycache__/_metadata.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/contrib/__pycache__/gce.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/contrib/__pycache__/reauth.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauth2client/contrib/__pycache__/reauth_errors.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/__pycache__/common.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/__pycache__/signals.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/__pycache__/uri_validate.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/__pycache__/errors.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/__pycache__/parameters.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/__pycache__/request_validator.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/__pycache__/signature.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/__pycache__/utils.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/endpoints/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/endpoints/__pycache__/access_token.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/endpoints/__pycache__/authorization.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/endpoints/__pycache__/base.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/endpoints/__pycache__/pre_configured.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/endpoints/__pycache__/request_token.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/endpoints/__pycache__/resource.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth1/rfc5849/endpoints/__pycache__/signature_only.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/__pycache__/errors.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/__pycache__/parameters.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/__pycache__/request_validator.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/__pycache__/tokens.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/__pycache__/utils.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/clients/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/clients/__pycache__/backend_application.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/clients/__pycache__/base.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/clients/__pycache__/legacy_application.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/clients/__pycache__/mobile_application.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/clients/__pycache__/service_application.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/clients/__pycache__/web_application.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/endpoints/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/endpoints/__pycache__/authorization.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/endpoints/__pycache__/base.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/endpoints/__pycache__/introspect.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/endpoints/__pycache__/metadata.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/endpoints/__pycache__/pre_configured.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/endpoints/__pycache__/resource.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/endpoints/__pycache__/revocation.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/endpoints/__pycache__/token.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/grant_types/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/grant_types/__pycache__/authorization_code.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/grant_types/__pycache__/base.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/grant_types/__pycache__/client_credentials.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/grant_types/__pycache__/implicit.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/grant_types/__pycache__/refresh_token.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/oauthlib/oauth2/rfc6749/grant_types/__pycache__/resource_owner_password_credentials.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/_file_info.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/_package_info.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/datetime_helpers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/enums.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/fields.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/message.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/modules.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/primitives.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/utils.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/__pycache__/version.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/__pycache__/compat.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/__pycache__/marshal.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/collections/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/collections/__pycache__/maps.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/collections/__pycache__/repeated.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/rules/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/rules/__pycache__/bytes.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/rules/__pycache__/dates.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/rules/__pycache__/enums.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/rules/__pycache__/field_mask.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/rules/__pycache__/message.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/rules/__pycache__/stringy_numbers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/rules/__pycache__/struct.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/proto/marshal/rules/__pycache__/wrappers.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/__pycache__/debug.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/__pycache__/error.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/codec/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/codec/ber/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/codec/ber/__pycache__/decoder.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/codec/ber/__pycache__/eoo.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/codec/cer/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/codec/cer/__pycache__/decoder.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/codec/der/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/codec/der/__pycache__/decoder.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/compat/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/compat/__pycache__/binary.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/compat/__pycache__/calling.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/compat/__pycache__/dateandtime.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/compat/__pycache__/integer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/compat/__pycache__/octets.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/compat/__pycache__/string.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/base.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/char.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/constraint.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/error.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/namedtype.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/namedval.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/opentype.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/tag.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/tagmap.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/univ.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1/type/__pycache__/useful.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1_modules/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1_modules/__pycache__/pem.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1_modules/__pycache__/rfc2251.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1_modules/__pycache__/rfc2459.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyasn1_modules/__pycache__/rfc5208.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyparsing/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/__pycache__/apdu.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/__pycache__/errors.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/__pycache__/hardware.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/__pycache__/hidtransport.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/__pycache__/model.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/__pycache__/u2f.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/convenience/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/convenience/__pycache__/authenticator.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/convenience/__pycache__/baseauthenticator.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/convenience/__pycache__/customauthenticator.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/convenience/__pycache__/localauthenticator.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/pyu2f/hid/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/__version__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/_internal_utils.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/adapters.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/api.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/auth.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/certs.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/compat.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/cookies.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/hooks.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/models.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/packages.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/sessions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/status_codes.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/structures.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests/__pycache__/utils.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests_oauthlib/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests_oauthlib/__pycache__/oauth1_auth.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests_oauthlib/__pycache__/oauth1_session.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests_oauthlib/__pycache__/oauth2_auth.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/requests_oauthlib/__pycache__/oauth2_session.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/rsa/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/rsa/__pycache__/common.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/rsa/__pycache__/core.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/rsa/__pycache__/key.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/rsa/__pycache__/pem.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/rsa/__pycache__/pkcs1.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/rsa/__pycache__/prime.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/rsa/__pycache__/randnum.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/rsa/__pycache__/transform.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/anchor.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/comments.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/compat.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/composer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/constructor.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/cyaml.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/dumper.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/emitter.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/error.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/events.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/loader.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/main.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/nodes.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/parser.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/reader.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/representer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/resolver.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/scalarbool.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/scalarfloat.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/scalarint.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/scalarstring.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/scanner.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/serializer.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/timestamp.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/tokens.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/ruamel/yaml/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/s3transfer/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/s3transfer/__pycache__/compat.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/s3transfer/__pycache__/exceptions.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/six/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/socks/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/uritemplate/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/uritemplate/__pycache__/api.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/uritemplate/__pycache__/orderedset.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/uritemplate/__pycache__/template.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/uritemplate/__pycache__/variable.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/_base_connection.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/_collections.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/_request_methods.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/_version.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/connection.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/connectionpool.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/exceptions.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/fields.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/filepost.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/poolmanager.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/__pycache__/response.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/contrib/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/contrib/__pycache__/pyopenssl.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/contrib/__pycache__/socks.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/http2/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/http2/__pycache__/probe.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/__init__.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/connection.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/proxy.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/request.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/response.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/retry.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/ssl_.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/ssl_match_hostname.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/ssltransport.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/timeout.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/url.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/util.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/lib/third_party/urllib3/util/__pycache__/wait.cpython-39.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/__pycache__/gsutil.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/__main__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/boto_resumable_upload.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/boto_translation.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/bucket_listing_ref.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/cloud_api.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/cloud_api_delegator.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/command.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/command_argument.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/command_runner.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/context_config.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/cred_types.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/cs_api_map.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/daisy_chain_wrapper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/devshell_auth_plugin.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/discard_messages_queue.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/exception.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/file_part.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/gcs_json_api.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/gcs_json_credentials.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/gcs_json_media.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/help_provider.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/iamcredentials_api.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/impersonation_credentials.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/kms_api.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/lazy_wrapper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/metrics.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/metrics_reporter.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/metrics_tuple.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/name_expansion.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/no_op_credentials.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/parallel_tracker_file.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/plurality_checkable_iterator.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/progress_callback.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/project_id.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/pubsub_api.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/resumable_streaming_upload.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/seek_ahead_thread.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/sig_handling.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/storage_url.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/tab_complete.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/thread_message.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/tracker_file.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/tz_utc.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/ui_controller.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/__pycache__/wildcard_iterator.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/addlhelp/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/acl.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/autoclass.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/bucketpolicyonly.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/cat.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/compose.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/config.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/cors.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/cp.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/defacl.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/defstorageclass.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/du.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/hash.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/help.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/hmac.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/iam.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/kms.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/label.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/lifecycle.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/logging.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/ls.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/mb.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/mv.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/notification.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/pap.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/perfdiag.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/rb.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/requesterpays.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/retention.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/rewrite.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/rm.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/rpo.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/rsync.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/setmeta.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/signurl.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/stat.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/test.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/ubla.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/update.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/version.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/versioning.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/commands/__pycache__/web.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/tests/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/tests/__pycache__/util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/iamcredentials_apitools/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/iamcredentials_apitools/__pycache__/iamcredentials_v1_client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/iamcredentials_apitools/__pycache__/iamcredentials_v1_messages.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/kms_apitools/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/kms_apitools/__pycache__/cloudkms_v1_client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/kms_apitools/__pycache__/cloudkms_v1_messages.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/pubsub_apitools/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/pubsub_apitools/__pycache__/pubsub_v1_client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/pubsub_apitools/__pycache__/pubsub_v1_messages.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/storage_apitools/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/storage_apitools/__pycache__/storage_v1_client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/third_party/storage_apitools/__pycache__/storage_v1_messages.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/acl_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/arg_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/boto_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/cat_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/cloud_api_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/constants.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/copy_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/encryption_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/execution_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/hashing_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/iam_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/ls_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/metadata_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/parallelism_framework_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/posix_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/retention_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/retry_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/rsync_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/shim_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/signurl_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/stet_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/system_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/temporary_file_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/text_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/translation_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/unit_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/update_util.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/user_agent_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/version_check.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/gslib/utils/__pycache__/wrapped_credentials.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/fasteners/fasteners/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/fasteners/fasteners/__pycache__/_utils.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/fasteners/fasteners/__pycache__/lock.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/fasteners/fasteners/__pycache__/process_lock.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/gcs-oauth2-boto-plugin/gcs_oauth2_boto_plugin/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/gcs-oauth2-boto-plugin/gcs_oauth2_boto_plugin/__pycache__/oauth2_client.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/gcs-oauth2-boto-plugin/gcs_oauth2_boto_plugin/__pycache__/oauth2_helper.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/gcs-oauth2-boto-plugin/gcs_oauth2_boto_plugin/__pycache__/oauth2_plugin.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/pyasn1-modules/pyasn1_modules/__pycache__/__init__.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/pyasn1-modules/pyasn1_modules/__pycache__/pem.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/pyasn1-modules/pyasn1_modules/__pycache__/rfc2251.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/pyasn1-modules/pyasn1_modules/__pycache__/rfc2459.cpython-313.pyc
+ delete mode 100644 google-cloud-sdk/platform/gsutil/third_party/pyasn1-modules/pyasn1_modules/__pycache__/rfc5208.cpython-313.pyc
+%                                                                               ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book(base) esoterikos@Great-Smoky-Mountains book % [?2004hgit push origin main[?2004l
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/esoterikosQ/QLab_book.git'
+%                                                                               ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book(base) esoterikos@Great-Smoky-Mountains book % [?2004hgit push mian   ain orogin    igin[?2004l
+error: src refspec origin does not match any
+error: failed to push some refs to 'main'
+%                                                                               ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book(base) esoterikos@Great-Smoky-Mountains book % [?2004hgit push[?2004l
+Enumerating objects: 491, done.
+Counting objects:   0% (1/491)Counting objects:   1% (5/491)Counting objects:   2% (10/491)Counting objects:   3% (15/491)Counting objects:   4% (20/491)Counting objects:   5% (25/491)Counting objects:   6% (30/491)Counting objects:   7% (35/491)Counting objects:   8% (40/491)Counting objects:   9% (45/491)Counting objects:  10% (50/491)Counting objects:  11% (55/491)Counting objects:  12% (59/491)Counting objects:  13% (64/491)Counting objects:  14% (69/491)Counting objects:  15% (74/491)Counting objects:  16% (79/491)Counting objects:  17% (84/491)Counting objects:  18% (89/491)Counting objects:  19% (94/491)Counting objects:  20% (99/491)Counting objects:  21% (104/491)Counting objects:  22% (109/491)Counting objects:  23% (113/491)Counting objects:  24% (118/491)Counting objects:  25% (123/491)Counting objects:  26% (128/491)Counting objects:  27% (133/491)Counting objects:  28% (138/491)Counting objects:  29% (143/491)Counting objects:  30% (148/491)Counting objects:  31% (153/491)Counting objects:  32% (158/491)Counting objects:  33% (163/491)Counting objects:  34% (167/491)Counting objects:  35% (172/491)Counting objects:  36% (177/491)Counting objects:  37% (182/491)Counting objects:  38% (187/491)Counting objects:  39% (192/491)Counting objects:  40% (197/491)Counting objects:  41% (202/491)Counting objects:  42% (207/491)Counting objects:  43% (212/491)Counting objects:  44% (217/491)Counting objects:  45% (221/491)Counting objects:  46% (226/491)Counting objects:  47% (231/491)Counting objects:  48% (236/491)Counting objects:  49% (241/491)Counting objects:  50% (246/491)Counting objects:  51% (251/491)Counting objects:  52% (256/491)Counting objects:  53% (261/491)Counting objects:  54% (266/491)Counting objects:  55% (271/491)Counting objects:  56% (275/491)Counting objects:  57% (280/491)Counting objects:  58% (285/491)Counting objects:  59% (290/491)Counting objects:  60% (295/491)Counting objects:  61% (300/491)Counting objects:  62% (305/491)Counting objects:  63% (310/491)Counting objects:  64% (315/491)Counting objects:  65% (320/491)Counting objects:  66% (325/491)Counting objects:  67% (329/491)Counting objects:  68% (334/491)Counting objects:  69% (339/491)Counting objects:  70% (344/491)Counting objects:  71% (349/491)Counting objects:  72% (354/491)Counting objects:  73% (359/491)Counting objects:  74% (364/491)Counting objects:  75% (369/491)Counting objects:  76% (374/491)Counting objects:  77% (379/491)Counting objects:  78% (383/491)Counting objects:  79% (388/491)Counting objects:  80% (393/491)Counting objects:  81% (398/491)Counting objects:  82% (403/491)Counting objects:  83% (408/491)Counting objects:  84% (413/491)Counting objects:  85% (418/491)Counting objects:  86% (423/491)Counting objects:  87% (428/491)Counting objects:  88% (433/491)Counting objects:  89% (437/491)Counting objects:  90% (442/491)Counting objects:  91% (447/491)Counting objects:  92% (452/491)Counting objects:  93% (457/491)Counting objects:  94% (462/491)Counting objects:  95% (467/491)Counting objects:  96% (472/491)Counting objects:  97% (477/491)Counting objects:  98% (482/491)Counting objects:  99% (487/491)Counting objects: 100% (491/491)Counting objects: 100% (491/491), done.
+Delta compression using up to 8 threads
+Compressing objects:   0% (1/281)Compressing objects:   1% (3/281)Compressing objects:   2% (6/281)Compressing objects:   3% (9/281)Compressing objects:   4% (12/281)Compressing objects:   5% (15/281)Compressing objects:   6% (17/281)Compressing objects:   7% (20/281)Compressing objects:   8% (23/281)Compressing objects:   9% (26/281)Compressing objects:  10% (29/281)Compressing objects:  11% (31/281)Compressing objects:  12% (34/281)Compressing objects:  13% (37/281)Compressing objects:  14% (40/281)Compressing objects:  15% (43/281)Compressing objects:  16% (45/281)Compressing objects:  17% (48/281)Compressing objects:  18% (51/281)Compressing objects:  19% (54/281)Compressing objects:  20% (57/281)Compressing objects:  21% (60/281)Compressing objects:  22% (62/281)Compressing objects:  23% (65/281)Compressing objects:  24% (68/281)Compressing objects:  25% (71/281)Compressing objects:  26% (74/281)Compressing objects:  27% (76/281)Compressing objects:  28% (79/281)Compressing objects:  29% (82/281)Compressing objects:  30% (85/281)Compressing objects:  31% (88/281)Compressing objects:  32% (90/281)Compressing objects:  33% (93/281)Compressing objects:  34% (96/281)Compressing objects:  35% (99/281)Compressing objects:  36% (102/281)Compressing objects:  37% (104/281)Compressing objects:  38% (107/281)Compressing objects:  39% (110/281)Compressing objects:  40% (113/281)Compressing objects:  41% (116/281)Compressing objects:  42% (119/281)Compressing objects:  43% (121/281)Compressing objects:  44% (124/281)Compressing objects:  45% (127/281)Compressing objects:  46% (130/281)Compressing objects:  47% (133/281)Compressing objects:  48% (135/281)Compressing objects:  49% (138/281)Compressing objects:  50% (141/281)Compressing objects:  51% (144/281)Compressing objects:  52% (147/281)Compressing objects:  53% (149/281)Compressing objects:  54% (152/281)Compressing objects:  55% (155/281)Compressing objects:  56% (158/281)Compressing objects:  57% (161/281)Compressing objects:  58% (163/281)Compressing objects:  59% (166/281)Compressing objects:  60% (169/281)Compressing objects:  61% (172/281)Compressing objects:  62% (175/281)Compressing objects:  63% (178/281)Compressing objects:  64% (180/281)Compressing objects:  65% (183/281)Compressing objects:  66% (186/281)Compressing objects:  67% (189/281)Compressing objects:  68% (192/281)Compressing objects:  69% (194/281)Compressing objects:  70% (197/281)Compressing objects:  71% (200/281)Compressing objects:  72% (203/281)Compressing objects:  73% (206/281)Compressing objects:  74% (208/281)Compressing objects:  75% (211/281)Compressing objects:  76% (214/281)Compressing objects:  77% (217/281)Compressing objects:  78% (220/281)Compressing objects:  79% (222/281)Compressing objects:  80% (225/281)Compressing objects:  81% (228/281)Compressing objects:  82% (231/281)Compressing objects:  83% (234/281)Compressing objects:  84% (237/281)Compressing objects:  85% (239/281)Compressing objects:  86% (242/281)Compressing objects:  87% (245/281)Compressing objects:  88% (248/281)Compressing objects:  89% (251/281)Compressing objects:  90% (253/281)Compressing objects:  91% (256/281)Compressing objects:  92% (259/281)Compressing objects:  93% (262/281)Compressing objects:  94% (265/281)Compressing objects:  95% (267/281)Compressing objects:  96% (270/281)Compressing objects:  97% (273/281)Compressing objects:  98% (276/281)Compressing objects:  99% (279/281)Compressing objects: 100% (281/281)Compressing objects: 100% (281/281), done.
+Writing objects:   0% (1/281)Writing objects:   1% (3/281)Writing objects:   1% (4/281), 16.00 KiB | 7.00 KiB/sWriting objects:   1% (4/281), 16.84 MiB | 7.96 MiB/sWriting objects:   1% (4/281), 28.78 MiB | 9.16 MiB/sWriting objects:   1% (4/281), 50.47 MiB | 12.13 MiB/sWriting objects:   2% (6/281), 50.47 MiB | 12.13 MiB/sWriting objects:   3% (9/281), 50.47 MiB | 12.13 MiB/sWriting objects:   4% (12/281), 50.47 MiB | 12.13 MiB/sWriting objects:   5% (15/281), 50.47 MiB | 12.13 MiB/sWriting objects:   6% (17/281), 50.47 MiB | 12.13 MiB/sWriting objects:   7% (20/281), 50.47 MiB | 12.13 MiB/sWriting objects:   8% (23/281), 50.47 MiB | 12.13 MiB/sWriting objects:   9% (26/281), 50.47 MiB | 12.13 MiB/sWriting objects:  10% (29/281), 50.47 MiB | 12.13 MiB/sWriting objects:  11% (31/281), 50.47 MiB | 12.13 MiB/sWriting objects:  12% (34/281), 50.47 MiB | 12.13 MiB/sWriting objects:  13% (37/281), 50.47 MiB | 12.13 MiB/sWriting objects:  14% (40/281), 50.47 MiB | 12.13 MiB/sWriting objects:  15% (43/281), 50.47 MiB | 12.13 MiB/sWriting objects:  16% (45/281), 50.47 MiB | 12.13 MiB/sWriting objects:  17% (48/281), 50.47 MiB | 12.13 MiB/sWriting objects:  18% (51/281), 50.47 MiB | 12.13 MiB/sWriting objects:  19% (54/281), 50.47 MiB | 12.13 MiB/sWriting objects:  20% (57/281), 50.47 MiB | 12.13 MiB/sWriting objects:  21% (60/281), 50.47 MiB | 12.13 MiB/sWriting objects:  22% (62/281), 50.47 MiB | 12.13 MiB/sWriting objects:  23% (65/281), 50.47 MiB | 12.13 MiB/sWriting objects:  24% (68/281), 50.47 MiB | 12.13 MiB/sWriting objects:  25% (71/281), 50.47 MiB | 12.13 MiB/sWriting objects:  26% (74/281), 50.47 MiB | 12.13 MiB/sWriting objects:  27% (76/281), 50.47 MiB | 12.13 MiB/sWriting objects:  28% (79/281), 50.47 MiB | 12.13 MiB/sWriting objects:  29% (82/281), 50.47 MiB | 12.13 MiB/sWriting objects:  30% (85/281), 50.47 MiB | 12.13 MiB/sWriting objects:  31% (88/281), 50.47 MiB | 12.13 MiB/sWriting objects:  32% (90/281), 50.47 MiB | 12.13 MiB/sWriting objects:  33% (93/281), 50.47 MiB | 12.13 MiB/sWriting objects:  34% (96/281), 50.47 MiB | 12.13 MiB/sWriting objects:  35% (99/281), 50.47 MiB | 12.13 MiB/sWriting objects:  36% (102/281), 50.47 MiB | 12.13 MiB/sWriting objects:  37% (104/281), 50.47 MiB | 12.13 MiB/sWriting objects:  38% (107/281), 50.47 MiB | 12.13 MiB/sWriting objects:  39% (110/281), 50.47 MiB | 12.13 MiB/sWriting objects:  40% (113/281), 50.47 MiB | 12.13 MiB/sWriting objects:  41% (116/281), 50.47 MiB | 12.13 MiB/sWriting objects:  42% (119/281), 50.47 MiB | 12.13 MiB/sWriting objects:  43% (121/281), 50.47 MiB | 12.13 MiB/sWriting objects:  44% (124/281), 50.47 MiB | 12.13 MiB/sWriting objects:  45% (127/281), 50.47 MiB | 12.13 MiB/sWriting objects:  46% (130/281), 50.47 MiB | 12.13 MiB/sWriting objects:  47% (133/281), 50.47 MiB | 12.13 MiB/sWriting objects:  48% (135/281), 50.47 MiB | 12.13 MiB/sWriting objects:  49% (138/281), 50.47 MiB | 12.13 MiB/sWriting objects:  50% (141/281), 50.47 MiB | 12.13 MiB/sWriting objects:  51% (144/281), 50.47 MiB | 12.13 MiB/sWriting objects:  52% (147/281), 50.47 MiB | 12.13 MiB/sWriting objects:  53% (149/281), 50.47 MiB | 12.13 MiB/sWriting objects:  54% (152/281), 50.47 MiB | 12.13 MiB/sWriting objects:  55% (155/281), 50.47 MiB | 12.13 MiB/sWriting objects:  56% (158/281), 50.47 MiB | 12.13 MiB/sWriting objects:  57% (161/281), 50.47 MiB | 12.13 MiB/sWriting objects:  58% (163/281), 50.47 MiB | 12.13 MiB/sWriting objects:  59% (166/281), 50.47 MiB | 12.13 MiB/sWriting objects:  60% (169/281), 50.47 MiB | 12.13 MiB/sWriting objects:  61% (172/281), 50.47 MiB | 12.13 MiB/sWriting objects:  62% (175/281), 50.47 MiB | 12.13 MiB/sWriting objects:  63% (178/281), 50.47 MiB | 12.13 MiB/sWriting objects:  64% (180/281), 50.47 MiB | 12.13 MiB/sWriting objects:  65% (183/281), 50.47 MiB | 12.13 MiB/sWriting objects:  66% (186/281), 50.47 MiB | 12.13 MiB/sWriting objects:  67% (189/281), 50.47 MiB | 12.13 MiB/sWriting objects:  68% (192/281), 50.47 MiB | 12.13 MiB/sWriting objects:  69% (194/281), 50.47 MiB | 12.13 MiB/sWriting objects:  70% (197/281), 50.47 MiB | 12.13 MiB/sWriting objects:  71% (200/281), 50.47 MiB | 12.13 MiB/sWriting objects:  72% (203/281), 50.47 MiB | 12.13 MiB/sWriting objects:  73% (206/281), 50.47 MiB | 12.13 MiB/sWriting objects:  74% (208/281), 50.47 MiB | 12.13 MiB/sWriting objects:  75% (211/281), 50.47 MiB | 12.13 MiB/sWriting objects:  76% (214/281), 50.47 MiB | 12.13 MiB/sWriting objects:  77% (217/281), 50.47 MiB | 12.13 MiB/sWriting objects:  78% (220/281), 50.47 MiB | 12.13 MiB/sWriting objects:  79% (222/281), 50.47 MiB | 12.13 MiB/sWriting objects:  80% (225/281), 50.47 MiB | 12.13 MiB/sWriting objects:  81% (228/281), 50.47 MiB | 12.13 MiB/sWriting objects:  82% (231/281), 50.47 MiB | 12.13 MiB/sWriting objects:  83% (234/281), 50.47 MiB | 12.13 MiB/sWriting objects:  84% (237/281), 50.47 MiB | 12.13 MiB/sWriting objects:  85% (239/281), 50.47 MiB | 12.13 MiB/sWriting objects:  86% (242/281), 50.47 MiB | 12.13 MiB/sWriting objects:  87% (245/281), 50.47 MiB | 12.13 MiB/sWriting objects:  88% (248/281), 50.47 MiB | 12.13 MiB/sWriting objects:  89% (251/281), 50.47 MiB | 12.13 MiB/sWriting objects:  90% (253/281), 50.47 MiB | 12.13 MiB/sWriting objects:  91% (256/281), 50.47 MiB | 12.13 MiB/sWriting objects:  92% (259/281), 50.47 MiB | 12.13 MiB/sWriting objects:  93% (262/281), 50.47 MiB | 12.13 MiB/sWriting objects:  94% (265/281), 50.47 MiB | 12.13 MiB/sWriting objects:  95% (267/281), 50.47 MiB | 12.13 MiB/sWriting objects:  96% (270/281), 50.47 MiB | 12.13 MiB/sWriting objects:  97% (273/281), 50.47 MiB | 12.13 MiB/sWriting objects:  98% (276/281), 50.47 MiB | 12.13 MiB/sWriting objects:  99% (279/281), 50.47 MiB | 12.13 MiB/sWriting objects: 100% (281/281), 50.47 MiB | 12.13 MiB/sWriting objects: 100% (281/281), 56.72 MiB | 12.69 MiB/s, done.
+Total 281 (delta 181), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/181)        remote: Resolving deltas:   1% (2/181)        remote: Resolving deltas:   2% (4/181)        remote: Resolving deltas:   3% (6/181)        remote: Resolving deltas:   4% (8/181)        remote: Resolving deltas:   5% (10/181)        remote: Resolving deltas:   6% (11/181)        remote: Resolving deltas:   7% (13/181)        remote: Resolving deltas:   8% (15/181)        remote: Resolving deltas:   9% (17/181)        remote: Resolving deltas:  10% (19/181)        remote: Resolving deltas:  11% (20/181)        remote: Resolving deltas:  12% (22/181)        remote: Resolving deltas:  13% (24/181)        remote: Resolving deltas:  14% (26/181)        remote: Resolving deltas:  15% (28/181)        remote: Resolving deltas:  16% (29/181)        remote: Resolving deltas:  17% (31/181)        remote: Resolving deltas:  18% (33/181)        remote: Resolving deltas:  19% (35/181)        remote: Resolving deltas:  20% (37/181)        remote: Resolving deltas:  21% (39/181)        remote: Resolving deltas:  22% (40/181)        remote: Resolving deltas:  23% (42/181)        remote: Resolving deltas:  24% (44/181)        remote: Resolving deltas:  25% (46/181)        remote: Resolving deltas:  26% (48/181)        remote: Resolving deltas:  27% (49/181)        remote: Resolving deltas:  28% (51/181)        remote: Resolving deltas:  29% (53/181)        remote: Resolving deltas:  30% (55/181)        remote: Resolving deltas:  31% (57/181)        remote: Resolving deltas:  32% (58/181)        remote: Resolving deltas:  33% (60/181)        remote: Resolving deltas:  34% (62/181)        remote: Resolving deltas:  35% (64/181)        remote: Resolving deltas:  36% (66/181)        remote: Resolving deltas:  37% (67/181)        remote: Resolving deltas:  38% (69/181)        remote: Resolving deltas:  39% (71/181)        remote: Resolving deltas:  40% (73/181)        remote: Resolving deltas:  41% (75/181)        remote: Resolving deltas:  42% (77/181)        remote: Resolving deltas:  43% (78/181)        remote: Resolving deltas:  44% (80/181)        remote: Resolving deltas:  45% (82/181)        remote: Resolving deltas:  46% (84/181)        remote: Resolving deltas:  47% (86/181)        remote: Resolving deltas:  48% (87/181)        remote: Resolving deltas:  49% (89/181)        remote: Resolving deltas:  50% (91/181)        remote: Resolving deltas:  51% (93/181)        remote: Resolving deltas:  52% (95/181)        remote: Resolving deltas:  53% (96/181)        remote: Resolving deltas:  54% (98/181)        remote: Resolving deltas:  55% (100/181)        remote: Resolving deltas:  56% (102/181)        remote: Resolving deltas:  57% (104/181)        remote: Resolving deltas:  58% (105/181)        remote: Resolving deltas:  59% (107/181)        remote: Resolving deltas:  60% (109/181)        remote: Resolving deltas:  61% (111/181)        remote: Resolving deltas:  62% (113/181)        remote: Resolving deltas:  63% (115/181)        remote: Resolving deltas:  64% (116/181)        remote: Resolving deltas:  65% (118/181)        remote: Resolving deltas:  66% (120/181)        remote: Resolving deltas:  67% (122/181)        remote: Resolving deltas:  68% (124/181)        remote: Resolving deltas:  69% (125/181)        remote: Resolving deltas:  70% (127/181)        remote: Resolving deltas:  71% (129/181)        remote: Resolving deltas:  72% (131/181)        remote: Resolving deltas:  73% (133/181)        remote: Resolving deltas:  74% (134/181)        remote: Resolving deltas:  75% (136/181)        remote: Resolving deltas:  76% (138/181)        remote: Resolving deltas:  77% (140/181)        remote: Resolving deltas:  78% (142/181)        remote: Resolving deltas:  79% (143/181)        remote: Resolving deltas:  80% (145/181)        remote: Resolving deltas:  81% (147/181)        remote: Resolving deltas:  82% (149/181)        remote: Resolving deltas:  83% (151/181)        remote: Resolving deltas:  84% (153/181)        remote: Resolving deltas:  85% (154/181)        remote: Resolving deltas:  86% (156/181)        remote: Resolving deltas:  87% (158/181)        remote: Resolving deltas:  88% (160/181)        remote: Resolving deltas:  89% (162/181)        remote: Resolving deltas:  90% (163/181)        remote: Resolving deltas:  91% (165/181)        remote: Resolving deltas:  92% (167/181)        remote: Resolving deltas:  93% (169/181)        remote: Resolving deltas:  94% (171/181)        remote: Resolving deltas:  95% (172/181)        remote: Resolving deltas:  96% (174/181)        remote: Resolving deltas:  97% (176/181)        remote: Resolving deltas:  98% (178/181)        remote: Resolving deltas:  99% (180/181)        remote: Resolving deltas: 100% (181/181)        remote: Resolving deltas: 100% (181/181), completed with 181 local objects.        
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File google-cloud-cli-darwin-arm.tar.gz is 55.45 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/esoterikosQ/QLab_book.git
+   b3c5b986..34e5825d  master -> master
 %                                                                               ]7;file://Great-Smoky-Mountains.local/Users/esoterikos/NextCloud/book(base) esoterikos@Great-Smoky-Mountains book % [?2004h
