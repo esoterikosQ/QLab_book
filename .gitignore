@@ -1,2 +1,8 @@
 # MyST build outputs
 _build
+
+# gcloud files
+google-cloud-sdk
+
+# local log files
+log
