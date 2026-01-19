@@ -13,3 +13,4 @@ gcp-credentials.json
 # 각종 설정 파일
 GEMINI.md
 clean-script.sh
+gcp_settings
