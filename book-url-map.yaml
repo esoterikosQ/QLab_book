@@ -1,0 +1,9 @@
+creationTimestamp: '2026-01-18T22:32:49.391-08:00'
+fingerprint: ZEfzwILy3Qo=
+id: 7284589159317008126
+kind: compute#urlMap
+name: book-http-redirect-map
+selfLink: https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/urlMaps/book-http-redirect-map
+
+defaultUrlRedirect:
+  hostRedirect: book.qlab.science

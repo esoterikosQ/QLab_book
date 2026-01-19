@@ -6,3 +6,10 @@ google-cloud-sdk
 
 # local log files
 log
+
+# IAM key file
+gcp-credentials.json
+
+# 각종 설정 파일
+GEMINI.md
+clean-script.sh

@@ -1,0 +1,440 @@
+# 
+$ gcloud compute addresses create book-ip --global
+API [compute.googleapis.com] not enabled on project [qlab-books-comprehensive]. Would you like to enable and retry (this will take a few minutes)? (y/N)?  y
+
+Enabling service [compute.googleapis.com] on project [qlab-books-comprehensive]...
+Operation "operations/acf.p2-52152484378-ad92f425-2692-4f91-8fd6-dd930b2aef7d" finished successfully.
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/addresses/book-ip].
+$ gcloud compute backend-buckets create book-backend-bucket --gcs-bucket-name=qbook-gcs-         lab-books-bucket --enable-cdn
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/backendBuckets/book-backend-bucket].
+NAME                 GCS_BUCKET_NAME    ENABLE_CDN
+book-backend-bucket  qlab-books-bucket  True
+$ gcloud compute url-maps create book-url-map --default  -backend-bucket=buuk-    ook-backend-bucket
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/urlMaps/book-url-map].
+NAME          DEFAULT_SERVICE
+book-url-map  backendBuckets/book-backend-bucket
+$ gcloud compute ssl-certificates create book-ssl-cert --domains=book.qlab.science --b go lobal
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/sslCertificates/book-ssl-cert].
+NAME           TYPE     CREATION_TIMESTAMP             EXPIRE_TIME  REGION  MANAGED_STATUS
+book-ssl-cert  MANAGED  2026-01-18T22:18:53.865-08:00                       PROVISIONING
+    book.qlab.science: PROVISIONING
+$ gcloud compute tark get-https-proxied crea      s create book-https-proxy --url-map=book-url=map --ssl-certificates=book-ssl-cert --global
+ERROR: (gcloud.compute.target-https-proxies.create) Could not fetch resource:
+ - Invalid value for field 'resource.urlMap.resourceName': 'book-url=map'. Must be a match of regex '(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)|[1-9][0-9]{0,19}'
+
+$ gcloud compute target-https-proxies create book-https-proxy --url-map=book-url=map --ssl-certificates=book-ssl-cert --globalmap --ssl-certificates=book-ssl-cert --global -map --ssl-certificates=book-ssl-cert --global
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/targetHttpsProxies/book-https-proxy].
+NAME              SSL_CERTIFICATES  URL_MAP       REGION  CERTIFICATE_MAP
+book-https-proxy  book-ssl-cert     book-url-map
+$ gcloud compute forwarding-rules create book-https: -forwarding    -rule --address=buu  ook-ip --target-https-proxy=book-https-proxy --ports-  443   =443 --global
+ERROR: (gcloud.compute.forwarding-rules.create) unrecognized arguments: --port=443 (did you mean '--ports'?) 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+$ gcloud compute forwarding-rules create book-https-forwarding-rule --address=book-ip --target-https-proxy=book-https-proxy --port=443 --globals=443 --global
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/forwardingRules/book-https-forwarding-rule].
+$ gcloud compute url-maps create cr  book-http-redirect-map --dea fault-m ulr-redirect="http://book.qlab.science{r uri" {}  }"
+ERROR: (gcloud.compute.url-maps.create) unrecognized arguments: --default-ulr-redirect=http://book.qlab.science{uri} (did you mean '--default-service'?) 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.science{uri}"
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-r
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-re
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-red
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redi
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redir
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redire
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirec
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect=
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="h
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="ht
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="htt
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http:
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http:/
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://b
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://bo
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://boo
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.q
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.ql
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qla
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.s
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.sc
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.sci
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.scie
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.scien
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.scienc
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.science
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.science{
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.science{u
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.science{ur
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.science{uri
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.science{uri}
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.science{uri}"
+
+$                                                                                                             
+
+$ gcloud compute url-maps create book-http-redirect-map --default-ulr-redirect="http://book.qlab.science{uri}"r-redirect="http://book.qlab.science{uri}" 
+$ gcloud compute url-maps create book-http-redirect-map --default-urㅣ-redirect="http://book.qlab.science{uri}"-redirect="http://book.qlab.science{uri}"  l-redirect="http://book.qlab.science{uri}"
+ERROR: (gcloud.compute.url-maps.create) unrecognized arguments: --default-url-redirect=http://book.qlab.science{uri} (did you mean '--default-service'?) 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="http://book.qlab.science{uri}"
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirec
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect=
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="hhttp://book.qlab.science{uri}"ohttp://book.qlab.science{uri}"shttp://book.qlab.science{uri}"thttp://book.qlab.science{uri}"-http://book.qlab.science{uri}"rhttp://book.qlab.science{uri}"ehttp://book.qlab.science{uri}"dhttp://book.qlab.science{uri}"ihttp://book.qlab.science{uri}"rhttp://book.qlab.science{uri}"ehttp://book.qlab.science{uri}"chttp://book.qlab.science{uri}"thttp://book.qlab.science{uri}"=http://book.qlab.science{uri}"
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=h
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=ht
+
+$                                                                                                                           
+
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=http://book.qlab.science{uri}"
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=http:
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=http:/
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=http://book.qlab.science{uri}" book.qlab.science{uri}" book.qlab.science{uri}" book.qlab.science{uri}" book.qlab.science{uri}" book.qlab.science{uri}" book.qlab.science{uri}" 
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=b
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=bo
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=boo
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.q
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.ql
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qla
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.s
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.sc
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.sci
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.scie
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.scien
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.scienc
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.science
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.science{
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.science{u
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.science{ur
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.science{uri
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.science{uri}" " " " 
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.science{"lr-redirect="http://book.qlab.science{uri}"   rl-redirect="host-redirect=book.qlab.science{"
+
+$                                                                                                                
+
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.science{"" 
+$ gcloud compute url-maps create book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.science"
+ERROR: (gcloud.compute.url-maps.create) unrecognized arguments: --default-url-redirect=host-redirect=book.qlab.science (did you mean '--default-service'?) 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+$ ㅎ치ㅐㅕ        gcloud version
+Google Cloud SDK 552.0.0
+bq 2.1.27
+core 2026.01.09
+gcloud-crc32c 1.0.0
+gsutil 5.35
+$ ㅎ  gclu oud compute url-maps create book-http-redirect-map --default-bakcend     ckend-bucket book-backend-bucket
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/urlMaps/book-http-redirect-map].
+NAME                    DEFAULT_SERVICE
+book-http-redirect-map  backendBuckets/book-backend-bucket
+$ gcloud compute ul rl-maps update book-http-redirect-map --default-url-redirect="host-redirect=book.qlab.science"
+ERROR: (gcloud.compute.url-maps) Invalid choice: 'update'.
+Maybe you meant:
+  gcloud compute backend-buckets
+  gcloud compute backend-services
+  gcloud compute commitments
+  gcloud compute disks
+  gcloud compute external-vpn-gateways
+  gcloud compute firewall-policies
+  gcloud compute forwarding-rules
+  gcloud compute health-checks
+  gcloud compute target-https-proxies
+  gcloud compute url-maps
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+$ gc l   cloud compute url-maps create               url-maps edit book-http-redirect-map
+[34;1H"/var/folders/nf/r8ssl6rn1mjgz9w_zq8xkp200000gn/T/tmpdymekc9b.txt" 85L, 3417B[1;1H# You can edit the resource below. Lines beginning with "#" are
+# ignored.
+#
+# If you introduce a syntactic error, you will be given the
+# opportunity to edit the file again. You can abort by closing this
+# file without saving it.
+#
+# At the bottom of this file, you will find an example resource.
+#
+# Only fields that can be modified are shown. The original resource
+# with all of its fields is reproduced in the comment section at the
+# bottom of this document.
+
+defaultService: https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/backendBuckets/book-backend-bucket
+
+# Example resource:
+# -----------------
+#
+#   defaultCustomErrorResponsePolicy:
+#     errorResponseRules:
+#     - matchResponseCodes:
+#[22;9H- 4xx
+#[23;9HoverrideResponseCode: 404
+#[24;9Hpath: /errors/4xx/not-found.html
+#     errorService: https://compute.googleapis.com/compute/v1/projects/my-project/global/backendServices/error-service
+#   defaultService: https://compute.googleapis.com/compute/v1/projects/my-project/global/backendServices/default-service
+#   hostRules:
+#   - hosts:
+#     - '*.google.com'
+#     - google.com
+#     pathMatcher: www
+#   - hosts:
+#     - '*.youtube.com'[1;1H[34;259H~@k[1;1H[34;259H   [2;1H[34;259H~@k[2;1H[34;259H   [1;1H[34;259H~@k[1;1H[34;259H   [2;1H[34;259H~@k[2;1H[34;259H   [3;1H[34;259H~@k[3;1H[34;259H   [4;1H[34;259H~@k[4;1H[34;259H   [3;1H[34;259H~@k[3;1H[34;259H   [2;1H[34;259H~@k[2;1H[34;259H   [1;1H[34;259H:[1;1H[34;1H                                                                             [34;259H 
+:e
+"/private/var/folders/nf/r8ssl6rn1mjgz9w_zq8xkp200000gn/T/tmpdymekc9b.txt" 85L, 3417B[1;1H[34;259H~@k[1;1H[34;259H   [1;1H[34;259H~@k[1;1H[34;259H   [1;1H[34;259H~@k[1;1H[34;259H   [1;1H[34;259H~@k[1;1H[34;259H   [1;1H[34;259H~@k[1;1H[34;259H   [1;1H[34;259H~@k[1;1H[34;259H   [1;1H[34;259H~@k[1;1H[34;259H   [2;1H[34;259H~@k[2;1H[34;259H   [3;1H[34;259H~@k[3;1H[34;259H   [4;1H[34;259H~@k[4;1H[34;259H   [5;1H[34;259H~@k[5;1H[34;259H   [6;1H[34;259H~@k[6;1H[34;259H   [7;1H[34;259H~@k[7;1H[34;259H   [8;1H[34;259H~@k[8;1H[34;259H   [9;1H[34;259H~@k[9;1H[34;259H   [10;1H[34;259H:[10;1H[34;1H                                                                                     [34;259H 
+:x
+[34;1H  
+ERROR: (gcloud.compute.url-maps.edit) Edit aborted by user.
+$ gcloud compute url-maps edit book-http-redirect-map
+[34;1H"/var/folders/nf/r8ssl6rn1mjgz9w_zq8xkp200000gn/T/tmptaluiuv5.txt" 85L, 3417B[1;1H# You can edit the resource below. Lines beginning with "#" are
+# ignored.
+#
+# If you introduce a syntactic error, you will be given the
+# opportunity to edit the file again. You can abort by closing this
+# file without saving it.
+#
+# At the bottom of this file, you will find an example resource.
+#
+# Only fields that can be modified are shown. The original resource
+# with all of its fields is reproduced in the comment section at the
+# bottom of this document.
+
+defaultService: https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/backendBuckets/book-backend-bucket
+
+# Example resource:
+# -----------------
+#
+#   defaultCustomErrorResponsePolicy:
+#     errorResponseRules:
+#     - matchResponseCodes:
+#[22;9H- 4xx
+#[23;9HoverrideResponseCode: 404
+#[24;9Hpath: /errors/4xx/not-found.html
+#     errorService: https://compute.googleapis.com/compute/v1/projects/my-project/global/backendServices/error-service
+#   defaultService: https://compute.googleapis.com/compute/v1/projects/my-project/global/backendServices/default-service
+#   hostRules:
+#   - hosts:
+#     - '*.google.com'
+#     - google.com
+#     pathMatcher: www
+#   - hosts:
+#     - '*.youtube.com'[1;1H[34;259H~@k[1;1H[34;259H   [1;1H[34;259Hㅑ[1;1H[34;259H  [1;1H[34;259H~@k[1;1H[34;259H   [1;1H[34;259Hi[1;1H[34;259H [1;1H[34;1H-- INSERT --                                                                 [1;1H
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[30;1H[29;1H[28;1H[27;1H[26;1H[25;1H[24;1H[23;1H[22;1H[21;1H[20;1H[19;1H[18;1H[17;1H[16;1H[15;1H[14;1H[13;1H[12;1H[11;1H[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1H[2;1H[1;1H# You 
+# You
+# Yo
+# Y
+# 
+#
+# You can edit the resource below. Lines beginning with "#" are[2;11H[2;10H[2;9H[2;8H[2;7H
+# ign
+# ig
+# i
+# 
+#
+# ignored.
+#[4;11Hntroduce a syntactic error, you will be given the[34;1H            [4;59H[34;259H^[[4;59H[34;259H  [4;60H[4;59H[34;259H~@k[4;59H[34;259H   [5;59H[34;259H~@k[5;59H[34;259H   [4;59H[34;259H~@k[4;59H[34;259H   [3;1H[34;259H~@k[3;1H[34;259H   [2;10H[34;259H~@k[2;10H[34;259H   [3;1H[34;259H~@k[3;1H[34;259H   [4;59H[34;259H~@k[4;59H[34;259H   [5;59H[34;259H~@k[5;59H[34;259H   [4;59H[34;259H~@k[4;59H[34;259H   [3;1H[34;259H~@k[3;1H[34;259H   [2;10H[34;259H~@k[2;10H[34;259H   [1;59H[34;259H:[1;59H[34;259H 
+:q
+[34;1H  
+ERROR: (gcloud.compute.url-maps.edit) Edit aborted by user.
+$ gcloud compute url-maps edit book-http-redirect-map
+[34;1H"/var/folders/nf/r8ssl6rn1mjgz9w_zq8xkp200000gn/T/tmp1wwjl4is.txt" 85L, 3417B[1;1H# You can edit the resource below. Lines beginning with "#" are
+# ignored.
+#
+# If you introduce a syntactic error, you will be given the
+# opportunity to edit the file again. You can abort by closing this
+# file without saving it.
+#
+# At the bottom of this file, you will find an example resource.
+#
+# Only fields that can be modified are shown. The original resource
+# with all of its fields is reproduced in the comment section at the
+# bottom of this document.
+
+defaultService: https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/backendBuckets/book-backend-bucket
+
+# Example resource:
+# -----------------
+#
+#   defaultCustomErrorResponsePolicy:
+#     errorResponseRules:
+#     - matchResponseCodes:
+#[22;9H- 4xx
+#[23;9HoverrideResponseCode: 404
+#[24;9Hpath: /errors/4xx/not-found.html
+#     errorService: https://compute.googleapis.com/compute/v1/projects/my-project/global/backendServices/error-service
+#   defaultService: https://compute.googleapis.com/compute/v1/projects/my-project/global/backendServices/default-service
+#   hostRules:
+#   - hosts:
+#     - '*.google.com'
+#     - google.com
+#     pathMatcher: www
+#   - hosts:
+#     - '*.youtube.com'[1;1H[34;259Hi[1;1H[34;259H [1;1H[34;1H-- INSERT --                                                                 [1;1H
+
+
+
+# opportunity to edit the file again. You can abort by closing this[4;60H[4;59H[4;58H[4;57H[4;56H[4;55H[4;54H[4;53H[4;52H[4;51H[4;50H[3;2H[2;11H[1;50H[1;49H[1;48H[1;47H[1;46H[1;45H[1;44H[1;43H[1;42H[1;41H[1;40H[1;39H[1;38H[1;37H[1;36H[1;35H[1;34H[1;33H[1;32H[1;31H[1;30H[1;29H[1;28H[1;27H[1;26H[1;25H[1;24H[1;23H[1;22H[1;21H[1;20H[1;19H[1;18H[1;17H[1;16H[1;15H[1;14H[1;13H[1;12H[1;11H[1;10H[1;9H[1;8H[1;7H
+# You
+# Yo
+# Y
+# 
+#
+# You can edit the resource below. Lines beginning with "#" are[2;11H[2;10H[2;9H[2;8H[2;7H
+# ign
+# ig
+# i
+# 
+# ignored.
+#
+#
+#
+# If you introduce a syntactic error, you will be given the[5;60H[5;59H[5;58H[5;57H[5;56H[5;55H[5;54H[5;53H[5;52H[5;51H[5;50H[5;49H[5;48H[5;47H[5;46H[5;45H[5;44H[5;43H[5;42H[5;41H[5;40H[5;39H[5;38H[5;37H[5;36H[5;35H[5;34H[5;33H[5;32H[5;31H[5;30H[5;29H[5;28H[5;27H[5;26H[5;25H[5;24H[5;23H[5;22H[5;21H[5;20H[5;19H[5;18H[5;17H[5;16H[5;15H[5;14H[5;13H[5;12H[5;11H[5;10H[5;9H[5;8H[5;7H
+# opp
+# op
+# o
+# 
+#
+# opportunity to edit the file again. You can abort by closing this[6;26H[6;25H[6;24H[6;23H[6;22H[6;21H[6;20H[6;19H[6;18H[6;17H[6;16H[6;15H[6;14H[6;13H[6;12H[6;11H[6;10H[6;9H[6;8H[6;7H
+# fil
+# fi
+# f
+# 
+# file without saving it.
+#
+#
+#
+# At the bottom of this file, you will find an example resource.
+#
+#
+#
+# Only fields that can be modified are shown. The original resource[34;1H            [10;67H[34;259H^[[10;67H[34;259H  [10;68H[10;67H[34;259H:[10;67H[34;259H 
+:q
+[34;1H  
+ERROR: (gcloud.compute.url-maps.edit) Edit aborted by user.
+$ gcloud config list
+[core]
+account = seunggyu.bak@gmail.com
+disable_usage_reporting = False
+project = qlab-books-comprehensive
+
+Your active configuration is: [default]
+$ gcloud compute urlma  -maps export book-http-redirect-map --destination=book-url-map.yaml
+$ gcloud compute url-maps import book-http-redirect-map --source=book-url-map.yaml
+Url Map [book-http-redirect-map] will be overwritten.
+
+Do you want to continue (Y/n)?  y
+
+WARNING: An up-to-date fingerprint must be provided to update the Url Map. Future versions of gcloud will fail with an error '412 conditionNotMet'
+ERROR: (gcloud.compute.url-maps.import) HTTPError 400: Invalid value for field 'resource.defaultUrlRedirect': '{  "hostRedirect": "book.qlab.science"}'. A default redirect can only be specified for a url map if it neither specifies a default service nor a default route action
+
+```yaml
+creationTimestamp: '2026-01-18T22:32:49.391-08:00'
+fingerprint: ZEfzwILy3Qo=
+id: 7284589159317008126
+kind: compute#urlMap
+name: book-http-redirect-map
+selfLink: https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/urlMaps/book-http-redirect-map
+
+defaultUrlRedirect:
+  hostRedirect: book.qlab.science
+```
+
+$ gcloud compute - url-maps import book-http-redirect-map --source  =book-urlm -map.yaml --global
+Url Map [book-http-redirect-map] will be overwritten.
+
+Do you want to continue (Y/n)?  y
+
+WARNING: An up-to-date fingerprint must be provided to update the Url Map. Future versions of gcloud will fail with an error '412 conditionNotMet'
+
+                                                                                                                                                                                                                                                                            
+Updating URL map...
+                                                                                                                                                                                                                                                                            
+Updating URL map...⠛
+                                                                                                                                                                                                                                                                            
+Updating URL map...⠹
+                                                                                                                                                                                                                                                                            
+Updating URL map...⠼
+                                                                                                                                                                                                                                                                            
+Updating URL map...⠶
+                                                                                                                                                                                                                                                                            
+Updating URL map...⠧
+                                                                                                                                                                                                                                                                            
+Updating URL map...⠏
+                                                                                                                                                                                                                                                                            
+Updating URL map...done.
+$ gcloud compute target-http-proxied create book-http-proxy --url-map=book-http-redirect-map
+ERROR: (gcloud.compute) Invalid choice: 'target-http-proxied'.
+Maybe you meant:
+  gcloud compute addresses create
+  gcloud compute health-checks create http
+  gcloud compute url-maps create
+  gcloud compute url-maps add-host-rule
+  gcloud compute url-maps add-path-matcher
+  gcloud compute addresses delete
+  gcloud compute addresses describe
+  gcloud compute addresses list
+  gcloud compute addresses move
+  gcloud compute target-https-proxies create
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+$ gcloud compute target-http-proxied create book-http-proxy --url-map=book-http-redirect-map create book-http-proxy --url-map=book-http-redirect-map 
+
+$ gcloud compute target-http-proxies create book-http-proxy --url-map=book-http-redirect-map
+
+$ gcloud compute target-http-proxies
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/targetHttpProxies/book-http-proxy].
+NAME             URL_MAP
+book-http-proxy  book-http-redirect-map
+$ gcloud compute forwarding-rules create book-htto p= -forwarding-rule --    --address=book-ip --target-http-proxy=book-http-proxy --ports=80 --global
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/forwardingRules/book-http-forwarding-rule].
+$ gcloud compute addresses describe book-ip --gbl  lobal --format="value(address)"
+34.54.33.28
+$ exit
+exit
