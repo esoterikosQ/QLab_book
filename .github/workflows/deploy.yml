@@ -57,6 +57,3 @@ jobs:
       - name: Set cache headers
         run: |
           gsutil -m setmeta -h "Cache-Control:public, max-age=3600" gs://${{ secrets.GCP_BUCKET_NAME }}/**
-
-      - name: Invalidate Cloud CDN cache
-        run: gcloud compute backend-buckets invalidate-cdn-cache ${{ secrets.GCP_BACKEND_BUCKET_NAME }} --path "/*" --project=${{ secrets.GCP_PROJECT_ID }}
