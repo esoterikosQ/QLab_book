@@ -1,0 +1,496 @@
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+$ 
+$  gcloud services enable artifactregistry.googleapis.com run.googleapis.com --project=qlab-books-comprehensive
+Operation "operations/acf.p2-52152484378-196377ad-5725-4638-bcfd-9674650894c8" finished successfully.
+$ 
+$  gcloud artifacts repositories create myst-books --repository-format=docker --location=asia-northeast3 --project=qlab-books-compre<ooks --repository-format=docker --location=asia-northeast3 --project=qlab-books-compreh                                            ensive
+Create request issued for: [myst-books]
+                                                                                                                                      Waiting for operation [projects/qlab-books-comprehensive/locations/asia-northeast3/operations/13037986-08a1-43da-9494-446409e9b2f2] to
+ complete...                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...⠧                                                                                                                                       complete...⠏                                                                                                                                       complete...⠛                                                                                                                                       complete...⠹                                                                                                                                       complete...⠼                                                                                                                                       complete...⠶                                                                                                                                       complete...done.
+Created repository [myst-books].
+$ 
+$  gcloud projects add-iam-policy-binding qlab-books-comprehensive \
+>   --member="serviceAccount:qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com" \
+>   --role="roles/artifactregistry.writer"
+Updated IAM policy for project [qlab-books-comprehensive].
+bindings:
+- members:
+  - serviceAccount:service-52152484378@gcp-sa-artifactregistry.iam.gserviceaccount.com
+  role: roles/artifactregistry.serviceAgent
+- members:
+  - serviceAccount:qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:service-52152484378@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-52152484378@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:52152484378-compute@developer.gserviceaccount.com
+  - serviceAccount:52152484378@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - user:seunggyu.bak@gmail.com
+  role: roles/owner
+- members:
+  - serviceAccount:service-52152484378@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:service-52152484378@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+etag: BwZIuxMuxhw=
+version: 1
+$ 
+$  gcloud projects add-iam-policy-binding qlab-books-comprehensive \
+>   --member="serviceAccount:qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com" \
+>   --role="roles/run.admin"
+Updated IAM policy for project [qlab-books-comprehensive].
+bindings:
+- members:
+  - serviceAccount:service-52152484378@gcp-sa-artifactregistry.iam.gserviceaccount.com
+  role: roles/artifactregistry.serviceAgent
+- members:
+  - serviceAccount:qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:service-52152484378@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-52152484378@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:52152484378-compute@developer.gserviceaccount.com
+  - serviceAccount:52152484378@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - user:seunggyu.bak@gmail.com
+  role: roles/owner
+- members:
+  - serviceAccount:service-52152484378@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:service-52152484378@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+etag: BwZIuxS8txc=
+version: 1
+$ 
+$  gcloud projects add-iam-policy-binding qlab-books-comprehensive \
+>   --member="serviceAccount:qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com" \
+>   --role="roles/iam.serviceAccountUser"
+Updated IAM policy for project [qlab-books-comprehensive].
+bindings:
+- members:
+  - serviceAccount:service-52152484378@gcp-sa-artifactregistry.iam.gserviceaccount.com
+  role: roles/artifactregistry.serviceAgent
+- members:
+  - serviceAccount:qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:service-52152484378@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-52152484378@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:52152484378-compute@developer.gserviceaccount.com
+  - serviceAccount:52152484378@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountUser
+- members:
+  - user:seunggyu.bak@gmail.com
+  role: roles/owner
+- members:
+  - serviceAccount:service-52152484378@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:service-52152484378@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+etag: BwZIuxWFCcE=
+version: 1
+$ 
+$  git add Dockerfile start.sh server.js package.json .dockerignore .github/workflows/deploy.yml && git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .dockerignore
+	modified:   .github/workflows/deploy.yml
+	new file:   Dockerfile
+	new file:   package.json
+	new file:   server.js
+	new file:   start.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	session.log
+
+$ 
+$  git commit -m "Switch to Cloud Run deployment with MyST server" && git push
+[master a2bcfcff] Switch to Cloud Run deployment with MyST server
+ 6 files changed, 159 insertions(+), 33 deletions(-)
+ create mode 100644 .dockerignore
+ create mode 100644 Dockerfile
+ create mode 100644 package.json
+ create mode 100644 server.js
+ create mode 100644 start.sh
+Enumerating objects: 14, done.
+Counting objects:   7% (1/14)Counting objects:  14% (2/14)Counting objects:  21% (3/14)Counting objects:  28% (4/14)Counting objects:  35% (5/14)Counting objects:  42% (6/14)Counting objects:  50% (7/14)Counting objects:  57% (8/14)Counting objects:  64% (9/14)Counting objects:  71% (10/14)Counting objects:  78% (11/14)Counting objects:  85% (12/14)Counting objects:  92% (13/14)Counting objects: 100% (14/14)Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
+Writing objects:  10% (1/10)Writing objects:  20% (2/10)Writing objects:  30% (3/10)Writing objects:  40% (4/10)Writing objects:  50% (5/10)Writing objects:  60% (6/10)Writing objects:  70% (7/10)Writing objects:  80% (8/10)Writing objects:  90% (9/10)Writing objects: 100% (10/10)Writing objects: 100% (10/10), 2.48 KiB | 2.48 MiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)        remote: Resolving deltas: 100% (1/1)        remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
+To https://github.com/esoterikosQ/QLab_book.git
+   21b53ac4..a2bcfcff  master -> master
+$ 
+$  gcloud run services list --project=qlab-books-comprehensive --region=asia-northeast3
+   SERVICE     REGION           URL                                                     LAST DEPLOYED BY                                                     LAST DEPLOYED AT
+…  myst-books  asia-northeast3  https://myst-books-52152484378.asia-northeast3.run.app  qlab-book-deployer@qlab-books-comprehensive.iam.gserviceaccount.com  2026-01-19T10:25:25.202377Z
+$ 
+$  gcloud compute url-maps list --project=qlab-books-comprehensive
+NAME                    DEFAULT_SERVICE
+book-http-redirect-map
+book-url-map            backendBuckets/book-backend-bucket
+$ 
+$  gcloud compute network-endpoint-groups create myst-books-neg \
+>   --region=asia-northeast3 \
+>   --network-endpoint-type=serverless \
+>   --cloud-run-service=myst-books \
+>   --project=qlab-books-comprehensive
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/regions/asia-northeast3/networkEndpointGroups/myst-books-neg].
+Created network endpoint group [myst-books-neg].
+$ 
+$  gcloud compute backend-services create myst-books-backend \
+>   --global \
+>   --load-balancing-scheme=EXTERNAL_MANAGED \
+>   --project=qlab-books-comprehensive
+Created [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/backendServices/myst-books-backend].
+NAME                BACKENDS  PROTOCOL
+myst-books-backend            HTTP
+$ 
+$  gcloud compute backend-services add-backend myst-books-backend \
+>   --global \
+>   --network-endpoint-group=myst-books-neg \
+>   --network-endpoint-group-region=asia-northeast3 \
+>   --project=qlab-books-comprehensive
+Updated [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/backendServices/myst-books-backend].
+$ 
+$  gcloud compute url-maps set-default-service book-url-map \
+>   --default-backend-service=myst-books-backend \
+>   --project=qlab-books-comprehensive
+ERROR: (gcloud.compute.url-maps.set-default-service) unrecognized arguments: --default-backend-service=myst-books-backend (did you mean '--default-backend-bucket'?) 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+$ 
+$  gcloud compute url-maps set-default-service book-url-map \
+>   --default-service=myst-books-backend \
+>   --project=qlab-books-comprehensive
+Updated [https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/urlMaps/book-url-map].
+$ 
+$  gcloud compute url-maps describe book-url-map --project=qlab-books-comprehensive --format="yaml(defaultService)"
+defaultService: https://www.googleapis.com/compute/v1/projects/qlab-books-comprehensive/global/backendServices/myst-books-backend
+$ 
+$  gcloud run services logs read myst-books --region=asia-northeast3 --project=qlab-books-comprehensive --limit=50
+2026-01-19 10:54:54 ⚠️  osborne.md unknown format for raw content: typst
+2026-01-19 10:54:54    Treating content as text
+2026-01-19 10:54:54 ⚠️  osborne.md unknown format for raw content: typst
+2026-01-19 10:54:54    Treating content as text
+2026-01-19 10:54:54 📖 Built osborne.md in 1.35 min.
+2026-01-19 10:55:18 📚 Built 3 pages for project in 3.2 min.
+2026-01-19 10:55:28 🔌 Content server started on port 3101!  🥳 🎉
+2026-01-19 10:55:28 	👉  http://localhost:3101  👈
+2026-01-19 10:55:57 GET 200 https://ws.1yo5zvlapytj29yd7ijw76s2o.blockchainnodeengine.com/
+2026-01-19 11:00:59 GET 200 https://book.qlab.science/
+2026-01-19 11:12:34 GET 404 https://34.54.33.28/.env
+2026-01-19 11:12:34 GET 404 https://34.54.33.28/api/.env
+2026-01-19 11:12:36 GET 404 https://34.54.33.28/backend/.env
+2026-01-19 11:12:36 GET 404 https://34.54.33.28/admin/.env
+2026-01-19 11:12:37 GET 404 https://34.54.33.28/.env.example
+2026-01-19 11:12:37 GET 404 https://34.54.33.28/app_dev.php/_profiler/phpinfo
+2026-01-19 11:12:38 GET 404 https://34.54.33.28/?phpinfo=-1
+2026-01-19 11:12:38 GET 404 https://34.54.33.28/stats/.env
+2026-01-19 11:12:39 GET 404 https://34.54.33.28/tmp/.env
+2026-01-19 11:12:40 GET 404 https://34.54.33.28/htdocs/.env
+2026-01-19 11:12:41 GET 404 https://34.54.33.28/facturacion/.env
+2026-01-19 11:12:41 GET 404 https://34.54.33.28/local.env
+2026-01-19 11:12:42 GET 404 https://34.54.33.28/videos/.env
+2026-01-19 11:12:42 GET 404 https://34.54.33.28/example.env
+2026-01-19 11:12:43 GET 404 https://34.54.33.28/horde/.env
+2026-01-19 11:12:44 GET 404 https://34.54.33.28/fileserver/.env
+2026-01-19 11:12:45 GET 404 https://34.54.33.28/.env.swp
+2026-01-19 11:12:45 GET 404 https://34.54.33.28/root/.env
+2026-01-19 11:12:46 GET 404 https://34.54.33.28/logging/.env
+2026-01-19 11:12:46 GET 404 https://34.54.33.28/rest/.env
+2026-01-19 11:12:47 GET 404 https://34.54.33.28/phpinfos.php
+2026-01-19 11:12:47 GET 404 https://34.54.33.28/.env.development.local
+2026-01-19 11:12:49 GET 404 https://34.54.33.28/http/.env
+2026-01-19 11:12:50 GET 404 https://34.54.33.28/sessions/.env
+2026-01-19 11:12:50 GET 404 https://34.54.33.28/example/.env
+2026-01-19 11:12:51 GET 404 https://34.54.33.28/logon.env
+2026-01-19 11:12:51 GET 404 https://34.54.33.28/m/.env
+2026-01-19 11:12:52 GET 404 https://34.54.33.28/static/.env
+2026-01-19 11:12:52 GET 404 https://34.54.33.28/.env.dev
+2026-01-19 11:12:53 GET 404 https://34.54.33.28/user/.env
+2026-01-19 11:24:04 GET 200 https://34.54.33.28/
+2026-01-19 11:37:30 GET 502 https://book.qlab.science/cs/
+2026-01-19 11:37:30 Proxy error: Error: connect ECONNREFUSED 127.0.0.1:3001
+2026-01-19 11:37:30     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+2026-01-19 11:37:30   errno: -111,
+2026-01-19 11:37:30   code: 'ECONNREFUSED',
+2026-01-19 11:37:30   syscall: 'connect',
+2026-01-19 11:37:30   address: '127.0.0.1',
+2026-01-19 11:37:30   port: 3001
+2026-01-19 11:37:30 }
+$ 
+$  gcloud logging read "resource.type=cloud_run_revision AND resource.labels.service_name=myst-books" --project=qlab-books-comprehen<n_revision AND resource.labels.service_name=myst-books" --project=qlab-books-comprehens                                            ive --limit=30 --format="table(timestamp,tex<yst-books" --project=qlab-books-comprehensive --limit=30 --format="table(timestamp,text                                            Payload)"
+TIMESTAMP                    TEXT_PAYLOAD
+2026-01-19T11:37:30.655086Z  }
+2026-01-19T11:37:30.655082Z    port: 3001
+2026-01-19T11:37:30.655079Z    address: '127.0.0.1',
+2026-01-19T11:37:30.655076Z    syscall: 'connect',
+2026-01-19T11:37:30.655073Z    code: 'ECONNREFUSED',
+2026-01-19T11:37:30.655069Z    errno: -111,
+2026-01-19T11:37:30.655066Z      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+2026-01-19T11:37:30.655038Z  Proxy error: Error: connect ECONNREFUSED 127.0.0.1:3001
+2026-01-19T11:37:30.645254Z
+2026-01-19T11:24:04.021441Z
+2026-01-19T11:12:53.057887Z
+2026-01-19T11:12:52.599986Z
+2026-01-19T11:12:52.154607Z
+2026-01-19T11:12:51.710745Z
+2026-01-19T11:12:51.263331Z
+2026-01-19T11:12:50.827729Z
+2026-01-19T11:12:50.394192Z
+2026-01-19T11:12:49.934340Z
+2026-01-19T11:12:47.798720Z
+2026-01-19T11:12:47.357250Z
+2026-01-19T11:12:46.804696Z
+2026-01-19T11:12:46.292171Z
+2026-01-19T11:12:45.842826Z
+2026-01-19T11:12:45.405681Z
+2026-01-19T11:12:44.675582Z
+2026-01-19T11:12:43.093221Z
+2026-01-19T11:12:42.640812Z
+2026-01-19T11:12:42.194762Z
+2026-01-19T11:12:41.752046Z
+2026-01-19T11:12:41.309757Z
+$ 
+$  gcloud logging read "resource.type=cloud_run_revision AND resource.labels.service_name=myst-books" --project=qlab-books-comprehen<n_revision AND resource.labels.service_name=myst-books" --project=qlab-books-comprehens                                            ive --limit=50 --format="value(textPayload)"<yst-books" --project=qlab-books-comprehensive --limit=50 --format="value(textPayload)"                                             2>&1 | head -100
+
+
+
+
+}
+  port: 3001
+  address: '127.0.0.1',
+  syscall: 'connect',
+  code: 'ECONNREFUSED',
+  errno: -111,
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+Proxy error: Error: connect ECONNREFUSED 127.0.0.1:3001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	👉  http://localhost:3101  👈
+🔌 Content server started on port 3101!  🥳 🎉
+📚 Built 3 pages for project in 3.2 min.
+📖 Built osborne.md in 1.35 min.
+$ 
+$  git add Dockerfile myst.yml start.sh server.js && git commit -m "Simplify: single MyST server with unified project" && git push
+[master 5ab09097] Simplify: single MyST server with unified project
+ 4 files changed, 43 insertions(+), 21 deletions(-)
+Enumerating objects: 11, done.
+Counting objects:   9% (1/11)Counting objects:  18% (2/11)Counting objects:  27% (3/11)Counting objects:  36% (4/11)Counting objects:  45% (5/11)Counting objects:  54% (6/11)Counting objects:  63% (7/11)Counting objects:  72% (8/11)Counting objects:  81% (9/11)Counting objects:  90% (10/11)Counting objects: 100% (11/11)Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 1.30 KiB | 1.30 MiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/4)        remote: Resolving deltas:  25% (1/4)        remote: Resolving deltas:  50% (2/4)        remote: Resolving deltas:  75% (3/4)        remote: Resolving deltas: 100% (4/4)        remote: Resolving deltas: 100% (4/4), completed with 4 local objects.        
+To https://github.com/esoterikosQ/QLab_book.git
+   a2bcfcff..5ab09097  master -> master
+$ 
+$  gcloud logging read "resource.type=cloud_run_revision AND resource.labels.service_name=myst-books" --project=qlab-books-comprehen<n_revision AND resource.labels.service_name=myst-books" --project=qlab-books-comprehens                                            ive --limit=30 --format="table(timestamp,tex<yst-books" --project=qlab-books-comprehensive --limit=30 --format="table(timestamp,text                                            Payload)" --freshness=10m
+TIMESTAMP                    TEXT_PAYLOAD
+2026-01-19T11:47:46.867827Z
+2026-01-19T11:47:46.802785Z
+2026-01-19T11:47:46.688284Z  Default STARTUP TCP probe failed 1 time consecutively for container "app-1" on port 8080. The instance was not started.
+                             Connection failed with status DEADLINE_EXCEEDED.
+2026-01-19T11:43:49.512538Z  	👉  http://localhost:3100  👈
+2026-01-19T11:43:49.512528Z  🔌 Content server started on port 3100!  🥳 🎉
+2026-01-19T11:43:49.474353Z  📚 Built 5 pages for project in 537 ms.
+2026-01-19T11:43:49.432072Z  ⚠️  ds/myst.yml 'config.project' extra key ignored: entry (at ds/myst.yml)
+2026-01-19T11:43:49.430218Z  ⚠️  ds/myst.yml 'config.project' extra key ignored: entry (at ds/myst.yml)
+2026-01-19T11:43:49.428710Z  ⚠️  ds/myst.yml 'config.project' extra key ignored: entry (at ds/myst.yml)
+2026-01-19T11:43:49.425122Z  ⚠️  cs/myst.yml 'config.project' extra key ignored: entry (at cs/myst.yml)
+2026-01-19T11:43:49.385029Z     In files: intro.md, cs/intro.md, ds/intro.md
+2026-01-19T11:43:49.385023Z  ⚠️  intro.md Duplicate identifier in project "fig:mountains"
+2026-01-19T11:43:49.384394Z     In files: intro.md, cs/intro.md, ds/intro.md
+2026-01-19T11:43:49.384386Z  ⚠️  intro.md Duplicate identifier in project "eq:book"
+2026-01-19T11:43:49.375116Z  📖 Built ds/osborne.md in 102 ms.
+2026-01-19T11:43:49.374871Z     Treating content as text
+2026-01-19T11:43:49.374868Z  ⚠️  ds/osborne.md unknown format for raw content: typst
+2026-01-19T11:43:49.374418Z     Treating content as text
+2026-01-19T11:43:49.374414Z  ⚠️  ds/osborne.md unknown format for raw content: typst
+2026-01-19T11:43:49.373967Z     Treating content as text
+2026-01-19T11:43:49.373947Z  ⚠️  ds/osborne.md unknown format for raw content: typst
+2026-01-19T11:43:49.372665Z  📖 Built ds/covariance_vector.md in 101 ms.
+2026-01-19T11:43:49.372285Z  📖 Built ds/intro.md in 101 ms.
+2026-01-19T11:43:49.371584Z  📖 Built cs/intro.md in 101 ms.
+2026-01-19T11:43:49.370868Z  📖 Built intro.md in 266 ms.
+2026-01-19T11:43:46.598858Z  Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.
+2026-01-19T11:43:39.168008Z
+2026-01-19T11:43:11.242107Z
+$ 
+$  npx mystmd start --help 2>&1 | head -30
+Usage: myst start [options]
+
+Start the current project as a website
+
+Options:
+  --execute                      Execute Notebooks (default: false)
+  --keep-host                    The HOST environment variable is changed to
+                                 "localhost" by default. This flag uses the
+                                 original environment variable. (default:
+                                 false)
+  --headless                     Run the server in headless mode, with only the
+                                 content server started (default: false)
+  --port <port>                  Run the application server from the specified
+                                 port number (env: PORT)
+  --server-port <server-port>    Run the content server from the specified port
+                                 number (env: SERVER_PORT)
+  --template <path-to-template>  Use this template file, instead of the one
+                                 specified in the myst.yml manifest
+  --max-size-webp <size>         Max image size to convert to webp format in MB
+                                 (default: 1.5)
+  -h, --help                     display help for command
+$ 
+$  git add Dockerfile && git commit -m "Fix: use --server-port for headless mode" && git push
+[master b27968bd] Fix: use --server-port for headless mode
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 439 bytes | 439.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)        remote: Resolving deltas:  50% (1/2)        remote: Resolving deltas: 100% (2/2)        remote: Resolving deltas: 100% (2/2), completed with 2 local objects.        
+To https://github.com/esoterikosQ/QLab_book.git
+   5ab09097..b27968bd  master -> master
+$ 
+$  git add Dockerfile .github/workflows/deploy.yml && git commit -m "Fix: use MyST default port 3100" && git push
+[master a38e7349] Fix: use MyST default port 3100
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+Enumerating objects: 11, done.
+Counting objects:   9% (1/11)Counting objects:  18% (2/11)Counting objects:  27% (3/11)Counting objects:  36% (4/11)Counting objects:  45% (5/11)Counting objects:  54% (6/11)Counting objects:  63% (7/11)Counting objects:  72% (8/11)Counting objects:  81% (9/11)Counting objects:  90% (10/11)Counting objects: 100% (11/11)Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 554 bytes | 554.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/3)        remote: Resolving deltas:  33% (1/3)        remote: Resolving deltas:  66% (2/3)        remote: Resolving deltas: 100% (3/3)        remote: Resolving deltas: 100% (3/3), completed with 3 local objects.        
+To https://github.com/esoterikosQ/QLab_book.git
+   b27968bd..a38e7349  master -> master
+$ 
+$  gcloud logging read "resource.type=cloud_run_revision AND resource.labels.service_name=myst-books" --project=qlab-books-comprehen<n_revision AND resource.labels.service_name=myst-books" --project=qlab-books-comprehens                                            ive --limit=50 --format="table(timestamp,tex<yst-books" --project=qlab-books-comprehensive --limit=50 --format="table(timestamp,text                                            Payload)" --freshness=10m 2>&1
+TIMESTAMP                    TEXT_PAYLOAD
+2026-01-19T12:10:12.180257Z
+2026-01-19T12:10:12.114610Z
+2026-01-19T12:10:11.905381Z  Default STARTUP TCP probe failed 1 time consecutively for container "app-1" on port 3100. The instance was not started.
+                             Connection failed with status DEADLINE_EXCEEDED.
+2026-01-19T12:06:38.351947Z  ⚠️  myst.yml 'config.project' extra key ignored: entry (at myst.yml)
+2026-01-19T12:06:14.578245Z  	👉  http://localhost:3100  👈
+2026-01-19T12:06:14.578233Z  🔌 Content server started on port 3100!  🥳 🎉
+2026-01-19T12:06:14.543042Z  📚 Built 5 pages for project in 527 ms.
+2026-01-19T12:06:14.505356Z  ⚠️  ds/myst.yml 'config.project' extra key ignored: entry (at ds/myst.yml)
+2026-01-19T12:06:14.503540Z  ⚠️  ds/myst.yml 'config.project' extra key ignored: entry (at ds/myst.yml)
+2026-01-19T12:06:14.501944Z  ⚠️  ds/myst.yml 'config.project' extra key ignored: entry (at ds/myst.yml)
+2026-01-19T12:06:14.498193Z  ⚠️  cs/myst.yml 'config.project' extra key ignored: entry (at cs/myst.yml)
+2026-01-19T12:06:14.456322Z     In files: intro.md, cs/intro.md, ds/intro.md
+2026-01-19T12:06:14.456319Z  ⚠️  intro.md Duplicate identifier in project "fig:mountains"
+2026-01-19T12:06:14.455979Z     In files: intro.md, cs/intro.md, ds/intro.md
+2026-01-19T12:06:14.455971Z  ⚠️  intro.md Duplicate identifier in project "eq:book"
+2026-01-19T12:06:14.451095Z  📖 Built ds/osborne.md in 99 ms.
+2026-01-19T12:06:14.450877Z     Treating content as text
+2026-01-19T12:06:14.450873Z  ⚠️  ds/osborne.md unknown format for raw content: typst
+2026-01-19T12:06:14.450455Z     Treating content as text
+2026-01-19T12:06:14.450446Z  ⚠️  ds/osborne.md unknown format for raw content: typst
+2026-01-19T12:06:14.449887Z     Treating content as text
+2026-01-19T12:06:14.449858Z  ⚠️  ds/osborne.md unknown format for raw content: typst
+2026-01-19T12:06:14.446298Z  📖 Built ds/covariance_vector.md in 95 ms.
+2026-01-19T12:06:14.445805Z  📖 Built ds/intro.md in 96 ms.
+2026-01-19T12:06:14.445180Z  📖 Built cs/intro.md in 96 ms.
+2026-01-19T12:06:14.444314Z  📖 Built intro.md in 273 ms.
+2026-01-19T12:06:11.508797Z  Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.
+2026-01-19T12:06:02.853348Z
+2026-01-19T12:05:51.651430Z  ⚠️  myst.yml 'config.project' extra key ignored: entry (at myst.yml)
+$ 
+$  git add Dockerfile && git commit -m "Fix: bind to 0.0.0.0 for Cloud Run access" && git push
+[master 806aabfd] Fix: bind to 0.0.0.0 for Cloud Run access
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 481 bytes | 481.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)        remote: Resolving deltas:  50% (1/2)        remote: Resolving deltas: 100% (2/2)        remote: Resolving deltas: 100% (2/2), completed with 2 local objects.        
+To https://github.com/esoterikosQ/QLab_book.git
+   a38e7349..806aabfd  master -> master
+$ 
+$  mv cs/intro.md cs_intro.md && mv ds/intro.md ds_intro.md && mv ds/covariance_vector.md . && mv ds/osborne.md . && rm -rf cs ds
+$ 
+$  ls -la cs ds 2>&1
+ls: cs: No such file or directory
+ls: ds: No such file or directory
+$ 
+$  ls -la *.md
+-rw-r--r--@ 1 esoterikos  staff  3360 Dec 17 11:03 covariance_vector.md
+-rw-r--r--@ 1 esoterikos  staff   969 Jan 14 14:53 cs_intro.md
+-rw-r--r--@ 1 esoterikos  staff   969 Dec 17 08:39 ds_intro.md
+-rw-r--r--@ 1 esoterikos  staff   969 Jan 14 14:57 intro.md
+-rw-r--r--@ 1 esoterikos  staff  9053 Jan 14 14:00 osborne.md
+$ 

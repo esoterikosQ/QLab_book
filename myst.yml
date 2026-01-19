@@ -13,12 +13,12 @@ project:
     - file: intro.md
     - title: Computer Science
       children:
-        - file: cs/intro.md
+        - file: cs_intro.md
     - title: Data Science
       children:
-        - file: ds/intro.md
-        - file: ds/covariance_vector.md
-        - file: ds/osborne.md
+        - file: ds_intro.md
+        - file: covariance_vector.md
+        - file: osborne.md
 
 site:
   template: book-theme
