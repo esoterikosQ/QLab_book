@@ -1,0 +1,12 @@
+{
+  "name": "myst-book-server",
+  "version": "1.0.0",
+  "description": "MyST Jupyter Book Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "./start.sh"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  }
+}
