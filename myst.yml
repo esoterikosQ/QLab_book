@@ -14,6 +14,8 @@ project:
     - title: Computer Science
       children:
         - file: cs_intro.md
+        - file: chmod.md
+        - file: shell_script.md
     - title: Data Science
       children:
         - file: ds_intro.md
