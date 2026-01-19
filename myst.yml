@@ -9,6 +9,16 @@ project:
       affiliation: Korean National Police University
       email: seunggyu.bak@gmail.com
   github: https://github.com/esoterikosQ/QLab_book
+  toc:
+    - file: intro.md
+    - title: Computer Science
+      children:
+        - file: cs/intro.md
+    - title: Data Science
+      children:
+        - file: ds/intro.md
+        - file: ds/covariance_vector.md
+        - file: ds/osborne.md
 
 site:
   template: book-theme

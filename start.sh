@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# CS와 DS 서버를 동시에 실행하고, nginx로 프록시
-# 간단한 방식: 하나의 서버만 실행하고 index.html에서 링크
-
+# CS 서버 시작 (백그라운드)
 cd /app/cs && myst start --headless --port 3001 &
+
+# DS 서버 시작 (백그라운드)
 cd /app/ds && myst start --headless --port 3002 &
 
-# 간단한 프록시 서버 (Node.js)
-node /app/server.js
+# 서버들이 시작될 때까지 대기
+echo "Waiting for MyST servers to start..."
+sleep 10
+
+# 프록시 서버 시작
+cd /app && node server.js

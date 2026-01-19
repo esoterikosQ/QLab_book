@@ -12,22 +12,12 @@ RUN npm install -g mystmd
 # 나머지 파일 복사
 COPY . .
 
-# CS 빌드
-WORKDIR /app/cs
+# 루트에서 빌드 (cs, ds 모두 포함)
 RUN myst build
-
-# DS 빌드
-WORKDIR /app/ds
-RUN myst build
-
-# 메인 디렉토리로 이동
-WORKDIR /app
 
 # 포트 설정
 ENV PORT=8080
 EXPOSE 8080
 
-# 시작 스크립트
-RUN chmod +x /app/start.sh
-
-CMD ["/app/start.sh"]
+# MyST 서버 직접 실행
+CMD ["myst", "start", "--headless", "--port", "8080"]
