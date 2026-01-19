@@ -16,8 +16,10 @@ COPY . .
 RUN myst build
 
 # 포트 설정 (MyST headless 기본 포트 3100 사용)
+# HOST=0.0.0.0으로 설정해야 Cloud Run에서 외부 접근 가능
 ENV PORT=3100
+ENV HOST=0.0.0.0
 EXPOSE 3100
 
-# MyST 서버 직접 실행 (headless = content server only, 기본 포트 3100)
-CMD ["myst", "start", "--headless"]
+# MyST 서버 직접 실행 (--keep-host로 HOST 환경변수 사용)
+CMD ["myst", "start", "--headless", "--keep-host"]
