@@ -12,15 +12,71 @@ project:
   toc:
     - file: intro.md
     - title: Computer Science
+    - file: 000-intro.md
       children:
-        - file: cs_intro.md
-        - file: chmod.md
-        - file: shell_script.md
-    - title: Data Science
+        - title: Linux Basics
+          children:
+            - file: 010-cli.md
+            - file: 011-chmod.md
+            - file: 012-shell_script.md
+            - file: 013-markdown.md
+            - file: 014-LaTeX.md
+            - file: 015-git.md
+        - title: Development Environment
+          children:
+            - file: 020-ide.md
+            - file: 021-docker.md
+            - file: 022-cloud.md
+        - title: Python
+          children:
+            - file: 030-python_intro.md
+            - file: 031-python_data_structure.md
+            - file: 032-python_functions.md
+            - file: 033-python_oop.md
+            - file: 034-python_modules.md
+            - file: 035-python_packages.md
+        - title: R
+          children:
+            - file: 040-r_intro.md
+            - file: 041-r_data_structure.md
+            - file: 042-r_functions.md
+            - file: 043-r_oop.md
+            - file: 044-r_packages.md
+        - title: C/C++
+          children:
+            - file: 050-c_intro.md
+            - file: 051-c_data_structure.md
+            - file: 052-c_functions.md
+            - file: 053-c_oop.md
+            - file: 054-c_packages.md
+        - title: Data Visualization
+          children:
+            - file: 060-structure.md
+            - file: 061-ggplot.md
+            - file: 062-matplotlib.md
+            - file: 063-seaborn.md
+            - file: 064-plotly
+    - file: 100-intro.md
       children:
-        - file: ds_intro.md
-        - file: covariance_vector.md
-        - file: osborne.md
+        - title: Mathematics
+          children:
+            - file: 100-intro.md
+        - title: Linear Algebra
+          children:
+            - file: 110-intro.md
+            - file: 111-vectors.md
+            - file: 112-matrices.md
+            - file: 113-matrix_operations.md
+            - file: 114-eigenvalues.md
+        - title: Mathematical Statistics
+          children:
+            - file: 120-intro.md
+            - file: 111-correlation.md
+            - file: 112-covariance_vector.md
+    - title: Documents
+      children:
+        - file: 200-intro.md
+        - file: 100-osborne.md
 
 site:
   template: book-theme

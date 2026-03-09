@@ -1,31 +1,35 @@
 # Introduction
 
 +++ {"part": "abstract"}
-This is my abstract!
+데이터 과학과 컴퓨터 과학을 잘 이해하고 활용할 수 있는 방법을 함께 고민하고, 공부하는 데에 필요한 내용을 안내하기 위한 자료들입니다.
 +++
 
-I am a book about ... something! Wikipedia has [information about books](wiki:book): hover over the link for more information.
+# 목차
 
-% An admonition containing a note
-:::{note}
-Books are usually written on paper ... But Jupyter Book can create _websites_!
+본 페이지는 아래와 같이 구성됩니다.
+
+::::{grid} 1 2 3 3
+:gutter: 3
+:padding: 2
+
+:::{grid-item-card} 컴퓨터 과학
+:link: 000-intro.md
+:class-header: bg-light
+
+컴퓨터를 이용한 개발환경 구축부터 프로그래밍, 인공지능 이론까지, 컴퓨터 활용에 필요한 내용을 다룹니다.
 :::
 
-If you sold 100 books at \$10 per book, you'd have \$1000 dollars according to [](#eq:book). If instead you publish your Jupyter Book to the web for free, you'd have \$0 dollars!
+:::{grid-item-card} 데이터 과학
+:link: 100-intro.md
+:class-header: bg-light
 
-% An arbitrary math equation
-:::{math}
-:name: eq:book
-
-x \times y = z
+데이터 과학의 토대를 이루는 수학, 통계학 등 다양한 이론을 기초부터 고급 단계에 이르기까지 설명합니다.
 :::
 
-Sometimes when reading it is helpful to foster a _tranquil_ environment. The image in [](#fig:mountains) would be a perfect spot!
+:::{grid-item-card} 🛠️ 고급 해설 자료
+:link: 200-intro.md
+:class-header: bg-light
 
-% A figure of a photograph of some mountains, followed by a caption
-:::{figure} https://github.com/rowanc1/pics/blob/main/mountains.png?raw=true
-:label: fig:mountains
-
-A photograph of some beautiful mountains to look at whilst reading.
-
-한글 폰트 테스트
+논문, 서적 등 난이도는 있지만 근본적인 설명, 최신 기술, 고급 응용 방법을 다루는 문헌에 관한 해설입니다.
+:::
+::::
