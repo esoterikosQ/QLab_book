@@ -6,7 +6,7 @@ project:
   description: Computer Science와 Data Science 학습 자료 모음
   authors:
     - name: SeungGyu Bak
-      affiliation: Korean National Police University
+      affiliation: Q's Laboratory
       email: seunggyu.bak@gmail.com
   github: https://github.com/esoterikosQ/QLab_book
   toc:
@@ -16,7 +16,7 @@ project:
       children:
         - title: Linux Basics
           children:
-            - file: 010-cli.md
+            - file: 010-intro.md
             - file: 011-chmod.md
             - file: 012-shell_script.md
             - file: 013-markdown.md
@@ -55,7 +55,7 @@ project:
             - file: 061-ggplot.md
             - file: 062-matplotlib.md
             - file: 063-seaborn.md
-            - file: 064-plotly
+            - file: 064-plotly.md
     - file: 100-intro.md
       children:
         - title: Mathematics
@@ -71,12 +71,12 @@ project:
         - title: Mathematical Statistics
           children:
             - file: 120-intro.md
-            - file: 111-correlation.md
-            - file: 112-covariance_vector.md
+            - file: 121-correlation.md
+            - file: 122-covariance_vector.md
     - title: Documents
       children:
         - file: 200-intro.md
-        - file: 100-osborne.md
+        - file: 113-osborne.md
 
 site:
   template: book-theme
