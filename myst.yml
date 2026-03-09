@@ -12,8 +12,8 @@ project:
   toc:
     - file: intro.md
     - title: Computer Science
-    - file: 000-intro.md
       children:
+        - file: 000-intro.md
         - title: Linux Basics
           children:
             - file: 010-intro.md
@@ -56,11 +56,9 @@ project:
             - file: 062-matplotlib.md
             - file: 063-seaborn.md
             - file: 064-plotly.md
-    - file: 100-intro.md
+    - title: Data Science
       children:
-        - title: Mathematics
-          children:
-            - file: 100-intro.md
+        - file: 100-intro.md
         - title: Linear Algebra
           children:
             - file: 110-intro.md
