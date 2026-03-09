@@ -48,3 +48,9 @@ jobs:
             --cpu 1 \
             --min-instances 0 \
             --max-instances 10
+
+      - name: Route all traffic to latest revision
+        run: |
+          gcloud run services update-traffic ${{ env.SERVICE_NAME }} \
+            --region ${{ env.REGION }} \
+            --to-latest
