@@ -20,5 +20,5 @@ ENV HOST=0.0.0.0
 ENV PORT=8080
 EXPOSE 8080
 
-# MyST 서버 실행 (headless 없이 - UI 포함)
-CMD ["myst", "start", "--keep-host"]
+# MyST 서버 실행 (포트 8080, Cloud Run 호환)
+CMD ["myst", "start", "--keep-host", "--port", "8080"]
