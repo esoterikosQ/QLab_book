@@ -1,28 +1,18 @@
 ---
-title: "고급통계계산 기말과제"
+title: "Knot Selection for Regression Splines via the LASSO"
 authors: 
-  - name: "2025121001 박승규"
+  - name: "M. R. Osborne, et. al."
 exports:
   - format: pdf
     template: lapreprint-typst
     output: exports/osborne.pdf
 ---
 
-```{raw} typst
-#set text(font: "Apple SD Gothic Neo")
-#set heading(numbering: none)
-#show heading.where(level: 1): it => text(size: 17pt, weight: "bold", it.body) + v(13.75pt)
-#show heading.where(level: 2): it => text(size: 15pt, style: "italic", it.body) + v(10pt)
-#show heading.where(level: 3): it => text(size: 12pt, style: "italic", it.body)
-```
-
-## Knot Selection for Regression Splines via the LASSO
-
-### 1. 목적
+# 1. 목적
 
 논문에서 제시하는 알고리즘은 LASSO 회귀를 이용하여 회귀 스플라인의 매듭점(knot)을 자동으로 선택할 수 있는 방법입니다. 전체 데이터셋에 (n-1)개의 매듭점 후보변수를 추가한 후, LASSO 회귀의 방법을 변형하여 최적의 매듭점 집합을 선택하는 방법입니다.
 
-### 2. 알고리즘의 기반이 되는 LASSO 회귀모형 분석
+# 2. 알고리즘의 기반이 되는 LASSO 회귀모형 분석
 
 LASSO 회귀의 최적화 문제는 다음과 같습니다.
 
@@ -75,11 +65,11 @@ v_i = \begin{cases}
 \boldsymbol{X} = \begin{bmatrix}\boldsymbol{1}, \boldsymbol{x}, \ | \ (\boldsymbol{x} - \boldsymbol{x_2})^p_+ , (\boldsymbol{x} - \kappa_2)^p_+ , \ldots , (\boldsymbol{x} - \kappa_{n-1})^p_+ \end{bmatrix}
 ```
 
-### 3. 논문이 제안하는 알고리즘
+# 3. 논문이 제안하는 알고리즘
 
 논문에서는 (1) LASSO 모형을 이용한 변수 및 매듭점 선택, (2) 최적의 LASSO 파라미터 t 선택을 구분하여 제시합니다.
 
-#### 3.1. LASSO 모형을 이용한 변수 및 매듭점 선택
+## 3.1. LASSO 모형을 이용한 변수 및 매듭점 선택
 
 ```{raw} typst
 #block(
@@ -131,13 +121,13 @@ s. t. \theta^T_{\sigma} (\boldsymbol {\beta_{\sigma} + h_{\sigma}}) \leq t
 
 식(8)의 분자는 변수값과 잔차 벡터의 내적값이고, 분모는 이 값들의 절댓값 중 최댓값입니다. 즉, $\boldsymbol {\tilde v}$는 변수-잔차의 내적값을 최댓값을 기준으로 정규화한 벡터입니다. 이 벡터 중 $|\boldsymbol {\tilde v_1}| = |\theta_{\sigma}|$이고, $\boldsymbol {|\tilde v_2|} \leq 1$이면 $\sigma$는 LASSO 조건을 만족하는 집합입니다. 만일 이를 만족하지 않으면 5로 넘어갑니다.
 
-#### 3.2. 최적의 LASSO 파라미터 t 선택
+## 3.2. 최적의 LASSO 파라미터 t 선택
 
 LASSO 파라미터인 t는 3.1.에서 선택한 매듭점의 집합만을 이용하여 LASSO 제약없이 회귀계수를 추정하고, 이 회귀계수를 이용하여 계산한 잔차제곱합에 AIC, BIC 등 방법으로 벌점화한 점수를 기준으로 최적의 t를 선택하는 방법으로 이루어집니다. 즉, 가장 처음에는 t=0으로 시작하여 점차 t를 늘려가며 (1)을 반복적으로 구행하고, 각 t에 대해 (2)의 방법으로 점수를 계산하여 최적의 t를 선택합니다.
 
 이 과정은 LASSO 모형을 무한정의 범위에서 반복하기 때문에 연산량이 많을 수 있지만, QR 분해를 이용하여 구한 R 행렬을 $\sigma$가 바뀔 때마다 부분적으로 갱신하는 방법을 통해 연산량을 줄일 수 있습니다.
 
-### 4. 수치적 실험 및 결론
+# 4. 수치적 실험 및 결론
 
 논문에서는 Silverman(1985)의 mortocycle dataset, Donoho el. al.(1994, 1995)의 blocks function과 doppler function을 이용하여 제안한 알고리즘의 성능을 평가합니다. 제안한 알고리즘을 이용하여 회귀곡선을 추정하는 실험을 수행했으며, LASSO 방식으로 회귀계수를 축소하여 RSS를 구했을 때의 회귀곡선, 축소하지 않고 RSS를 구했을 때의 회귀곡선, t의 구간을 추정하기 위해 minimum bracket을 이용한 방법, AIC/BIC 비교 등 다양한 비교를 수행했습니다.
 
