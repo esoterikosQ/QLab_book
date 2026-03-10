@@ -8,6 +8,9 @@
     <loc>http://localhost:3000/intro</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/intro-1</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/chmod</loc>
   </url>
   <url>
@@ -23,13 +26,106 @@
     <loc>http://localhost:3000/git</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/intro-1</loc>
+    <loc>http://localhost:3000/ide</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/docker</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/cloud</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/python-intro</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/python-data-structure</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/python-functions</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/python-oop</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/python-modules</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/python-packages</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/r-intro</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/r-data-structure</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/r-functions</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/r-oop</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/r-packages</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/c-intro</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/c-data-structure</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/c-functions</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/c-oop</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/c-packages</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/structure</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/ggplot</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/matplotlib</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/seaborn</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/plotly</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/intro-2</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/intro-3</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/vectors</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/matrices</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/matrix-operations</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/eigenvalues</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/intro-4</loc>
   </url>
   <url>
     <loc>http://localhost:3000/correlation</loc>
   </url>
   <url>
     <loc>http://localhost:3000/covariance-vector</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/intro-5</loc>
   </url>
   <url>
     <loc>http://localhost:3000/osborne</loc>
