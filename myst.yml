@@ -71,6 +71,11 @@ project:
             - file: 120-intro.md
             - file: 121-correlation.md
             - file: 122-covariance_vector.md
+        - title: Mathematical Understanding of Data Science
+          children:
+            - file: 160-intro.md
+            - file: 161-260319.md
+            - file: 162-260326.md
     - title: Documents
       children:
         - file: 200-intro.md
