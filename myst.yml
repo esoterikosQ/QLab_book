@@ -76,6 +76,8 @@ project:
             - file: 160-intro.md
             - file: 161-260319.md
             - file: 162-260326.md
+            - file: 163-260402.md
+            - file: 164-test.md
     - title: Documents
       children:
         - file: 200-intro.md
