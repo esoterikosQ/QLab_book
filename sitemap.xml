@@ -140,6 +140,9 @@
     <loc>http://localhost:3000/test1</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/test2</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/intro-6</loc>
   </url>
 </urlset>
