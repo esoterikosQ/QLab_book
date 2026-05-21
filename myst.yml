@@ -2,6 +2,8 @@
 version: 1
 project:
   id: ed5e7c5e-805e-4e04-87c8-a627ed1c3c4b
+  plugins:
+    - sphinx-proof
   title: QLab Book
   description: Computer Science와 Data Science 학습 자료 모음
   authors:
