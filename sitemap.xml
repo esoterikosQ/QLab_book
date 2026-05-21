@@ -143,6 +143,15 @@
     <loc>http://localhost:3000/test2</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/167-260507</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/168-260514</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/169-260521</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/intro-6</loc>
   </url>
 </urlset>
