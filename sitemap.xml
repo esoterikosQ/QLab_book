@@ -122,7 +122,13 @@
     <loc>http://localhost:3000/correlation</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/sufficient-statistics</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/covariance-vector</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/factorization-theorem</loc>
   </url>
   <url>
     <loc>http://localhost:3000/intro-5</loc>
@@ -150,6 +156,12 @@
   </url>
   <url>
     <loc>http://localhost:3000/169-260521</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/assignment1</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/assignment2</loc>
   </url>
   <url>
     <loc>http://localhost:3000/intro-6</loc>
