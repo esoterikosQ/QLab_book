@@ -119,16 +119,13 @@
     <loc>http://localhost:3000/intro-4</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/correlation</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/sufficient-statistics</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/covariance-vector</loc>
+    <loc>http://localhost:3000/factorization-theorem</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/factorization-theorem</loc>
+    <loc>http://localhost:3000/neyman-pearson</loc>
   </url>
   <url>
     <loc>http://localhost:3000/intro-5</loc>
