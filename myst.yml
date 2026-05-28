@@ -72,7 +72,9 @@ project:
           children:
             - file: 120-intro.md
             - file: 121-correlation.md
+            - file: 123-sufficient_statistics.md
             - file: 122-covariance_vector.md
+            - file: 124-factorization_theorem.md
         - title: Mathematical Understanding of Data Science
           children:
             - file: 160-intro.md
@@ -84,6 +86,8 @@ project:
             - file: 167-260507.md
             - file: 168-260514.md
             - file: 169-260521.md
+            - file: 170-assignment1.md
+            - file: 171-assignment2.md
 
     - title: Documents
       children:
