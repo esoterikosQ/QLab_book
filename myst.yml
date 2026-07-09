@@ -63,8 +63,9 @@ project:
         - file: 100-intro.md
         - title: Basic Mathematics
           children:
-            - file: 1100-intro.md
-            - file: 1101-tailor.md
+            - file: 1000-intro.md
+            - file: 1001-tailor.md
+            - file: 1002-laplace_trf.md
             # - file: 112-matrices.md
             # - file: 113-matrix_operations.md
             # - file: 114-eigenvalues.md
@@ -81,6 +82,7 @@ project:
             - file: 1308-random_variable.md
             - file: 1309-cdf.md
             - file: 1310-exp.md
+            - file: 1306-mgf.md
             # - file: 121-correlation.md
             - file: 1303-sufficient_statistics.md
             # - file: 122-covariance_vector.md
