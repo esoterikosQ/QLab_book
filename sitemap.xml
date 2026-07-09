@@ -83,10 +83,19 @@
     <loc>http://localhost:3000/plotly</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1101-tailor</loc>
+    <loc>http://localhost:3000/intro-2</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/intro-2</loc>
+    <loc>http://localhost:3000/1000-intro</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1001-tailor</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1002-laplace-trf</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/intro-3</loc>
   </url>
   <url>
     <loc>http://localhost:3000/vectors</loc>
@@ -113,6 +122,9 @@
     <loc>http://localhost:3000/1310-exp</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/1306-mgf</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/1303-sufficient-statistics</loc>
   </url>
   <url>
@@ -122,6 +134,6 @@
     <loc>http://localhost:3000/1305-neyman-pearson</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/intro-3</loc>
+    <loc>http://localhost:3000/intro-4</loc>
   </url>
 </urlset>
