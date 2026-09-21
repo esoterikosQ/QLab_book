@@ -81,13 +81,26 @@ project:
             - file: 1300-intro.md
             - file: 1308-random_variable.md
             - file: 1309-cdf.md
-            - file: 1310-exp.md
+            - file: 1310-expectation.md
             - file: 1306-mgf.md
+            - file: 1313-normal.md
+            - file: 1315-gamma.md
+            - file: 1314-chi_sq.md
+            - file: 1311-beta.md
+            - file: 1312-laplace.md
+            - file: 1316-weibull.md
             # - file: 121-correlation.md
             - file: 1303-sufficient_statistics.md
             # - file: 122-covariance_vector.md
             - file: 1304-factorization_theorem.md
             - file: 1305-neyman_pearson.md
+        - title: Stats on Baseball
+          children:
+            - file: 1400-intro.md
+            - file: 1401-install_r.md
+            - file: 1402-baseballr.md
+            - file: 1403-slugging_percentage.md
+            - file: 1404-woba.md
         # - title: Mathematical Understanding of Data Science
         #   children:
         #     - file: 160-intro.md
