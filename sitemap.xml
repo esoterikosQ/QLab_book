@@ -119,10 +119,28 @@
     <loc>http://localhost:3000/1309-cdf</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1310-exp</loc>
+    <loc>http://localhost:3000/1310-expectation</loc>
   </url>
   <url>
     <loc>http://localhost:3000/1306-mgf</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1313-normal</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1315-gamma</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1314-chi-sq</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1311-beta</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1312-laplace</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1316-weibull</loc>
   </url>
   <url>
     <loc>http://localhost:3000/1303-sufficient-statistics</loc>
@@ -132,6 +150,15 @@
   </url>
   <url>
     <loc>http://localhost:3000/1305-neyman-pearson</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1400-intro</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1401-install-r</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/1402-baseballr</loc>
   </url>
   <url>
     <loc>http://localhost:3000/intro-4</loc>
