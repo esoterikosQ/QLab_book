@@ -161,6 +161,9 @@
     <loc>http://localhost:3000/1402-baseballr</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/1403-babip</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/intro-4</loc>
   </url>
 </urlset>
