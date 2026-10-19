@@ -102,6 +102,7 @@ project:
             - file: 1403-babip.md
             - file: 1403-slugging_percentage.md
             - file: 1404-woba.md
+            - file: 1405-rays-fip.md
 
         # - title: Mathematical Understanding of Data Science
         #   children:
