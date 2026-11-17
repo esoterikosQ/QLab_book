@@ -46,21 +46,39 @@ stopifnot(
 
 여러 포지션에서 뛴 선수는 **가장 많은 타석을 기록한 포지션**에 배정한다. 비교할 집단은 포수(C), 1루수(1B), 2루수(2B), 3루수(3B), 유격수(SS), 좌익수(LF), 중견수(CF), 우익수(RF), 지명타자(DH)이다. 타석 수가 같으면 아래 코드에 나열된 순서에서 앞선 포지션을 선택한다. [`mlb_stats()` 문서](https://billpetti.github.io/baseballr/reference/mlb_stats.html) · [MLB 포지션별 타격 조건 코드](https://statsapi.mlb.com/api/v1/situationCodes)
 
+MLB API의 조회 한도를 고려해 한 번에 1,000행씩 요청한다. `offset`에는 지금까지 받은 행 수를 넣어 다음 페이지부터 조회하고, 전체 행 수인 `total_splits`에 도달하면 멈춘다. 페이지를 합친 뒤 전체 행 수와 선수·포지션 조합의 중복 여부를 확인한다.
+
 ```{code-block} r
 position_codes <- c(
   p2 = "C", p3 = "1B", p4 = "2B", p5 = "3B", p6 = "SS",
   p7 = "LF", p8 = "CF", p9 = "RF", pD = "DH"
 )
-splits <- mlb_stats(
-  stat_type = "statSplits", stat_group = "hitting", player_pool = "ALL",
-  game_type = "R", season = season, sport_ids = 1,
-  sit_codes = names(position_codes), limit = 10000
-)
-if (is.null(splits) || nrow(splits) == 0L) {
-  stop("MLB 포지션별 타석 데이터를 불러오지 못했습니다.")
+page_size <- 1000L
+offset <- 0L
+split_pages <- list()
+
+repeat {
+  page <- mlb_stats(
+    stat_type = "statSplits", stat_group = "hitting", player_pool = "ALL",
+    game_type = "R", season = season, sport_ids = 1,
+    sit_codes = names(position_codes),
+    sort_stat = "plateAppearances", order = "desc",
+    limit = page_size, offset = offset
+  )
+  if (is.null(page) || nrow(page) == 0L) {
+    stop(sprintf("MLB 포지션별 타석 조회에 실패했습니다 (offset = %d).", offset))
+  }
+
+  split_pages[[length(split_pages) + 1L]] <- page
+  offset <- offset + nrow(page)
+  if (offset >= page$total_splits[[1L]]) {
+    break
+  }
 }
+
+splits <- bind_rows(split_pages)
 stopifnot(
-  nrow(splits) == unique(splits$total_splits),
+  all(splits$total_splits == nrow(splits)),
   anyDuplicated(splits[c("player_id", "split_code")]) == 0L
 )
 
