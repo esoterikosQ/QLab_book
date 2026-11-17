@@ -1,172 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://localhost:3000/sitemap_style.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="http://pre.render/sitemap_style.xsl" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3000</loc>
+    <loc>http://pre.render</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/intro</loc>
+    <loc>http://pre.render/intro</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/intro-1</loc>
+    <loc>http://pre.render/intro-1</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/chmod</loc>
+    <loc>http://pre.render/chmod</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/shell-script</loc>
+    <loc>http://pre.render/shell-script</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/markdown</loc>
+    <loc>http://pre.render/markdown</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/latex</loc>
+    <loc>http://pre.render/latex</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/git</loc>
+    <loc>http://pre.render/git</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/ide</loc>
+    <loc>http://pre.render/ide</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/docker</loc>
+    <loc>http://pre.render/docker</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/cloud</loc>
+    <loc>http://pre.render/cloud</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/python-intro</loc>
+    <loc>http://pre.render/python-intro</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/python-data-structure</loc>
+    <loc>http://pre.render/python-data-structure</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/python-functions</loc>
+    <loc>http://pre.render/python-functions</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/python-oop</loc>
+    <loc>http://pre.render/python-oop</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/python-modules</loc>
+    <loc>http://pre.render/python-modules</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/python-packages</loc>
+    <loc>http://pre.render/python-packages</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/c-intro</loc>
+    <loc>http://pre.render/c-intro</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/c-data-structure</loc>
+    <loc>http://pre.render/c-data-structure</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/c-functions</loc>
+    <loc>http://pre.render/c-functions</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/c-oop</loc>
+    <loc>http://pre.render/c-oop</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/c-packages</loc>
+    <loc>http://pre.render/c-packages</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/structure</loc>
+    <loc>http://pre.render/structure</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/ggplot</loc>
+    <loc>http://pre.render/ggplot</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/matplotlib</loc>
+    <loc>http://pre.render/matplotlib</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/seaborn</loc>
+    <loc>http://pre.render/seaborn</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/plotly</loc>
+    <loc>http://pre.render/plotly</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/intro-2</loc>
+    <loc>http://pre.render/intro-2</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1000-intro</loc>
+    <loc>http://pre.render/1000-intro</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1001-tailor</loc>
+    <loc>http://pre.render/1001-tailor</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1002-laplace-trf</loc>
+    <loc>http://pre.render/1002-laplace-trf</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/intro-3</loc>
+    <loc>http://pre.render/intro-3</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/vectors</loc>
+    <loc>http://pre.render/vectors</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/matrices</loc>
+    <loc>http://pre.render/matrices</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/matrix-operations</loc>
+    <loc>http://pre.render/matrix-operations</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/eigenvalues</loc>
+    <loc>http://pre.render/eigenvalues</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1300-intro</loc>
+    <loc>http://pre.render/1300-intro</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1308-random-variable</loc>
+    <loc>http://pre.render/1308-random-variable</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1309-cdf</loc>
+    <loc>http://pre.render/1309-cdf</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1310-expectation</loc>
+    <loc>http://pre.render/1310-expectation</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1306-mgf</loc>
+    <loc>http://pre.render/1306-mgf</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1313-normal</loc>
+    <loc>http://pre.render/1313-normal</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1315-gamma</loc>
+    <loc>http://pre.render/1315-gamma</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1314-chi-sq</loc>
+    <loc>http://pre.render/1314-chi-sq</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1311-beta</loc>
+    <loc>http://pre.render/1311-beta</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1312-laplace</loc>
+    <loc>http://pre.render/1312-laplace</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1316-weibull</loc>
+    <loc>http://pre.render/1316-weibull</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1303-sufficient-statistics</loc>
+    <loc>http://pre.render/1303-sufficient-statistics</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1304-factorization-theorem</loc>
+    <loc>http://pre.render/1304-factorization-theorem</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1305-neyman-pearson</loc>
+    <loc>http://pre.render/1305-neyman-pearson</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1400-intro</loc>
+    <loc>http://pre.render/1400-intro</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1401-install-r</loc>
+    <loc>http://pre.render/1401-install-r</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1402-baseballr</loc>
+    <loc>http://pre.render/1402-baseballr</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1403-babip</loc>
+    <loc>http://pre.render/1403-babip</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/1405-rays-fip</loc>
+    <loc>http://pre.render/1405-rays-fip</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/intro-4</loc>
+    <loc>http://pre.render/1407-woba-anova</loc>
+  </url>
+  <url>
+    <loc>http://pre.render/intro-4</loc>
   </url>
 </urlset>
