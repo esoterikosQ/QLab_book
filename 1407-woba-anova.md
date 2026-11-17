@@ -162,7 +162,8 @@ print(summary(hot_corner_fit))
 # 두 집단에서는 등분산 양측 t 검정이 같은 p값을 준다.
 # 평균 차이와 신뢰구간의 방향은 1 집단 - 0 집단이다.
 hot_corner_test <- with(hot_corner_players, t.test(
-  x = wOBA[hot_corner == "1"], y = wOBA[hot_corner == "0"], var.equal = TRUE
+  x = wOBA[hot_corner == "1"], y = wOBA[hot_corner == "0"],
+  var.equal = TRUE, alternative = "two.sided"
 ))
 print(hot_corner_test)
 ```
@@ -176,4 +177,60 @@ print(hot_corner_test)
 
 두 집단의 평균이 같다는 귀무가설을 검정한 결과 $F(1,123)=4.793$, $p=0.03046$이었다. `hot_corner = 1` 집단의 평균이 0.01080 높았으며, 등분산 가정에 따른 평균 차이의 95% 신뢰구간은 [0.00104, 0.02057]이었다. 두 집단의 ANOVA는 등분산 양측 t 검정과 같은 p값을 주고, $F=t^2$이다.
 
-이 집단 구분은 Tukey 결과를 확인한 뒤 선택한 탐색적 비교이다. 제시한 p값과 신뢰구간은 이번 두 집단 비교에 대한 값이며, 집단 선택 과정에서 생긴 다중비교는 보정하지 않았다.
+핫코너 집단과 나머지 수비 포지션 집단의 비교는 이 실습에서 원래 관심을 둔 하나의 평균 차이를 검정한다.
+
+## 6. 두 수준 설명변수에서 t 검정과 ANOVA의 동등성
+
+여기서 반응변수는 연속형인 wOBA이고, 설명변수 `hot_corner`는 0과 1의 두 수준을 갖는다. 두 집단의 표본평균을 $\bar y_0$, $\bar y_1$, 표본 크기를 $n_0$, $n_1$이라고 하자. 두 집단에 공통으로 적용하는 합동분산은 다음과 같다.
+
+$$
+s_p^2 = \frac{(n_0-1)s_0^2+(n_1-1)s_1^2}{n_0+n_1-2}.
+$$
+
+등분산 이표본 t 검정의 통계량과 두 집단 ANOVA의 통계량 사이에는 다음 관계가 있다.
+
+$$
+t=\frac{\bar y_1-\bar y_0}{s_p\sqrt{1/n_1+1/n_0}},
+\qquad
+F=\frac{\dfrac{n_0n_1}{n_0+n_1}(\bar y_1-\bar y_0)^2}{s_p^2}=t^2.
+$$
+
+t 검정의 자유도는 $n_0+n_1-2=123$, ANOVA의 분자·분모 자유도는 각각 1과 123이다. 두 검정은 $H_0:\mu_1=\mu_0$와 $H_1:\mu_1\ne\mu_0$를 검정한다. 등분산 가정과 양측 대립가설 아래에서 두 p값과 유의성 판단이 일치한다. R에서는 `t.test()`에 `var.equal = TRUE`와 `alternative = "two.sided"`를 지정해 이 조건을 명시한다.
+
+```{code-block} text
+Two Sample t-test
+
+t = 2.1894, df = 123, p-value = 0.03046
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.001036145 0.020573453
+sample estimates:
+mean of x mean of y
+0.3365206 0.3257158
+```
+
+t값의 양수 부호는 `hot_corner = 1`의 평균이 0 집단보다 높다는 방향을 보여준다. 5% 유의수준에서 두 집단의 평균이 같다는 귀무가설을 기각하며, 추정 평균 차이는 0.01080이다.
+
+아래 코드로 ANOVA의 F값이 t값의 제곱과 같은지, 두 p값이 같은지 직접 확인한다.
+
+```{code-block} r
+# 동일한 두 집단에서 F = t^2와 두 p값의 일치를 확인한다.
+hot_corner_anova <- summary(hot_corner_fit)[[1L]]
+test_comparison <- data.frame(
+  t = unname(hot_corner_test$statistic),
+  t_squared = unname(hot_corner_test$statistic)^2,
+  F = hot_corner_anova[["F value"]][1L],
+  p_t = hot_corner_test$p.value,
+  p_anova = hot_corner_anova[["Pr(>F)"]][1L]
+)
+print(test_comparison, row.names = FALSE)
+stopifnot(
+  isTRUE(all.equal(test_comparison$t_squared, test_comparison$F)),
+  isTRUE(all.equal(test_comparison$p_t, test_comparison$p_anova))
+)
+```
+
+```{code-block} text
+       t t_squared        F        p_t    p_anova
+2.189394  4.793448 4.793448 0.03045564 0.03045564
+```
