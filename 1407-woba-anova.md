@@ -138,3 +138,42 @@ if (p_value < alpha) {
 ```
 
 이 자료에서 Tukey 보정 p값이 0.05 미만인 포지션 쌍은 없었다. 전체 $F$ 검정은 아홉 평균이 모두 같은지 한 번에 검정하며, Tukey 검정은 36개 쌍을 함께 고려해 각 차이를 평가한다. p값은 선수별 시즌 wOBA에 적용한 모형에 따른 값이며, 관찰된 평균 차이만으로 포지션의 인과효과를 추정할 수 없다.
+
+## 5. 지명타자를 제외한 두 포지션 집단 비교
+
+이번에는 1루수·3루수·좌익수·우익수를 `hot_corner = 1`, 포수·2루수·유격수·중견수를 `hot_corner = 0`으로 묶는다. 주 포지션이 지명타자(DH)인 선수는 제외한다. `hot_corner`는 이 실습에서 정한 두 집단의 변수 이름이다.
+
+```{code-block} r
+# DH를 제외하고 요청한 두 포지션 집단을 비교한다.
+hot_corner_players <- players |>
+  filter(position != "DH") |>
+  mutate(hot_corner = factor(
+    as.integer(position %in% c("1B", "3B", "LF", "RF")), levels = 0:1
+  ))
+
+hot_corner_summary <- hot_corner_players |>
+  group_by(hot_corner) |>
+  summarise(n = n(), mean_wOBA = mean(wOBA), sd_wOBA = sd(wOBA), .groups = "drop")
+print(as.data.frame(hot_corner_summary), row.names = FALSE)
+
+hot_corner_fit <- aov(wOBA ~ hot_corner, data = hot_corner_players)
+print(summary(hot_corner_fit))
+
+# 두 집단에서는 등분산 양측 t 검정이 같은 p값을 준다.
+# 평균 차이와 신뢰구간의 방향은 1 집단 - 0 집단이다.
+hot_corner_test <- with(hot_corner_players, t.test(
+  x = wOBA[hot_corner == "1"], y = wOBA[hot_corner == "0"], var.equal = TRUE
+))
+print(hot_corner_test)
+```
+
+2026년 11월 18일 조회 자료에서 지명타자 10명을 제외한 125명의 결과는 다음과 같다.
+
+| hot_corner | 주 포지션 | 선수 수 | 평균 wOBA | 표준편차 |
+| --- | --- | ---: | ---: | ---: |
+| 0 | C, 2B, SS, CF | 57 | 0.3257 | 0.0279 |
+| 1 | 1B, 3B, LF, RF | 68 | 0.3365 | 0.0272 |
+
+두 집단의 평균이 같다는 귀무가설을 검정한 결과 $F(1,123)=4.793$, $p=0.03046$이었다. `hot_corner = 1` 집단의 평균이 0.01080 높았으며, 등분산 가정에 따른 평균 차이의 95% 신뢰구간은 [0.00104, 0.02057]이었다. 두 집단의 ANOVA는 등분산 양측 t 검정과 같은 p값을 주고, $F=t^2$이다.
+
+이 집단 구분은 Tukey 결과를 확인한 뒤 선택한 탐색적 비교이다. 제시한 p값과 신뢰구간은 이번 두 집단 비교에 대한 값이며, 집단 선택 과정에서 생긴 다중비교는 보정하지 않았다.
