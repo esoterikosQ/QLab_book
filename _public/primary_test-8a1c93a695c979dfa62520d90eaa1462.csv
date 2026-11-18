@@ -1,0 +1,2 @@
+"estimand","seasons","observed","expected","difference","t","df","p_one_sided","lower_95_one_sided"
+"Equal-season mean difference",11,0.609221842003484,0.527157272016837,0.0820645699866473,7.16606784471533,10,1.5230708016707e-05,0.0613085785720887
