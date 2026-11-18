@@ -103,6 +103,7 @@ project:
             - file: 1403-slugging_percentage.md
             - file: 1404-woba.md
             - file: 1405-rays-fip.md
+            - file: 1406-postseason-homeruns.md
             - file: 1407-woba-anova.md
 
         # - title: Mathematical Understanding of Data Science
