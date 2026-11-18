@@ -1,5 +1,0 @@
-list(analysis_run_utc = "2026-10-22 01:19:39 UTC", source = "FanGraphs via baseballr", 
-    baseballr_version = "2.0.0", years = 2015:2025, postseason = TRUE, 
-    month = "1000", exponent = 2, baseline = "Each team's full postseason RS and RA; verified against daily totals", 
-    games = 440, team_games = 880L, hr_team_games = 613L, cache_mtime_range_utc = c("2026-10-22 01:10:19 UTC", 
-    "2026-10-22 01:19:38 UTC"))
